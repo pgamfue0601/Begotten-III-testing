@@ -32,7 +32,7 @@ ITEM.stabilityScale = 0.60; -- reduces stability damage by 40%
 --]]
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Wanderer Mail";
+ITEM.name = "Malla del errante";
 ITEM.group = "prelude_wanderers/wanderertabard";
 ITEM.model = "models/begottenprelude/items/wanderertabard.mdl"
 ITEM.iconoverride = "begotten/ui/itemicons/wanderertabard.png"
@@ -43,7 +43,7 @@ ITEM.protection = 53
 ITEM.type = "chainmail";
 ITEM.weight = 5;
 ITEM.weightclass = "Medium";
-ITEM.description = "Rusty iron chainmail worn underneath a decaying leather jerkin. It bears no colors or insignias, making it a true Wanderer's choice of armor.";
+ITEM.description = "Cota de malla de hierro oxidado que se lleva bajo una jerga de cuero en descomposición. No lleva colores ni insignias, por lo que es la armadura elegida por los errantes.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 
@@ -92,7 +92,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Faithling Chainmail";
+ITEM.name = "Malla pagana";
 ITEM.uniqueID = "faithling_mail"
 ITEM.group = "prelude_wanderers/romanmail";
 ITEM.model = "models/begotten_apocalypse/items/hilltop_chainmail.mdl"
@@ -104,7 +104,7 @@ ITEM.protection = 55
 ITEM.type = "chainmail";
 ITEM.weight = 4.5;
 ITEM.weightclass = "Medium";
-ITEM.description = "Shoddily forged chainmail of pagan design. This type of armor is seen commonly on the edges of county districts, where raiders roam freely and sack villages.";
+ITEM.description = "Una cota de malla de diseño pagano y mal forjada. Este tipo de armadura se ve con frecuencia en los bordes de los distritos condales, donde los asaltantes vagan libremente y saquean las aldeas.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 
@@ -152,7 +152,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Wastelord Hauberk";
+ITEM.name = "Cota de malla del Lord del Yermo";
 ITEM.uniqueID = "wastelord_armor"
 ITEM.group = "prelude_wanderers/templar";
 ITEM.model = "models/begottenprelude/goose/templarprop.mdl"
@@ -164,7 +164,7 @@ ITEM.protection = 82;
 ITEM.weight = 8;
 ITEM.weightclass = "Heavy";
 ITEM.type = "plate";
-ITEM.description = "An impeccably crafted set of steel plate armor, with an undecorated tabard atop it. Worn almost exclusively by sellswords and powerful unnamed wastelanders, this armor holds a strange power preventing factions from wearing it.";
+ITEM.description = "Una armadura de placas de acero impecablemente elaborada, con un tabardo sin decoración encima. Usada casi exclusivamente por espadachines y poderosos yermenses anónimos, esta armadura posee un extraño poder que impide a las facciones llevarla.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.requiredbeliefs = {"hauberk"};
 ITEM.requiredFactions = {"Wanderer"};
@@ -216,7 +216,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Wanderer Crude Plate";
+ITEM.name = "Armadura de placa tosca del Errante";
 ITEM.group = "wanderers/crudeplate";
 ITEM.model = "models/begotten/headgroups_props/crudeplate.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/crude_plate.png"
@@ -227,7 +227,7 @@ ITEM.protection = 75;
 ITEM.weight = 8;
 ITEM.weightclass = "Heavy";
 ITEM.type = "plate";
-ITEM.description = "A crudely constructed set of armor that nevertheless provides outstanding protection. It is comprised of steel plates that cover almost the entire body.";
+ITEM.description = "Una armadura de construcción tosca que, sin embargo, proporciona una protección excepcional. Se compone de placas de acero que cubren casi todo el cuerpo.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.requiredbeliefs = {"hauberk"};
@@ -278,7 +278,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Gatekeeper Plate";
+ITEM.name = "Armadura de placas de la Guardia";
 ITEM.group = "gatekeepers/gatekeepermedium";
 ITEM.model = "models/items/magic/armors/player_armors/player_armor_chainmail.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/gatekeeper_plate.png"
@@ -289,7 +289,7 @@ ITEM.protection = 55
 ITEM.type = "chainmail";
 ITEM.weight = 5;
 ITEM.weightclass = "Medium";
-ITEM.description = "A set of iron plate armor commonly used by the Holy Order of the Gatekeepers.";
+ITEM.description = "Armadura de placas de hierro utilizada habitualmente por la Sagrada Orden de la Guardia.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -338,7 +338,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Fine Gatekeeper Plate";
+ITEM.name = "Armadura de placas refinada del Guardián";
 ITEM.group = "gatekeepers/gatekeeperfine";
 ITEM.model = "models/items/magic/armors/player_armors/player_armor_plate.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/heavy_gatekeeper_plate.png"
@@ -349,7 +349,7 @@ ITEM.protection = 65
 ITEM.type = "chainmail";
 ITEM.weight = 6;
 ITEM.weightclass = "Medium";
-ITEM.description = "An improved set of armor based on that used by the Holy Order of the Gatekeepers, reinforced with fine steel and additional plates.";
+ITEM.description = "Una armadura mejorada basada en la utilizada por la Sagrada Orden de la Guardia, reforzada con acero fino y placas adicionales.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -398,7 +398,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Ornate Gatekeeper Plate";
+ITEM.name = "Armadura de placas ornamentada del Guardián";
 ITEM.group = "gatekeepers/gatekeeperornate";
 ITEM.model = "models/items/magic/armors/player_armors/player_armor_plate_magic.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/ornate_gatekeeper_plate.png"
@@ -409,7 +409,7 @@ ITEM.protection = 70
 ITEM.type = "chainmail";
 ITEM.weight = 6;
 ITEM.weightclass = "Medium";
-ITEM.description = "A highly expensive gold-plated set of armor based on that used by the Holy Order of the Gatekeepers, reinforced with fine steel and additional plates.";
+ITEM.description = "Una costosa armadura chapada en oro basada en la utilizada por la Sagrada Orden de la Guardia, reforzada con acero fino y placas adicionales.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -458,7 +458,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Vexillifer Gatekeeper Plate";
+ITEM.name = "Armadura de placas del Vexilarius";
 ITEM.model = "models/items/magic/armors/player_armors/player_armor_plate_magic.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/ornate_gatekeeper_plate.png"
 ITEM.category = "Armor"
@@ -469,7 +469,7 @@ ITEM.type = "chainmail";
 ITEM.hasHelmet = true;
 ITEM.weight = 7;
 ITEM.weightclass = "Medium";
-ITEM.description = "The golden and ornate armor of a Vexillifer, reinforced with fine steel and topped with a lion pelt and stoic iron mask.";
+ITEM.description = "La armadura dorada y ornamentada de un Vexilarius, reforzada con acero fino y rematada con una piel de león y una estoica máscara de hierro.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.requiredFaiths = {"Faith of the Light"};
 ITEM.excludedFactions = {"Goreic Warrior"};
@@ -523,7 +523,7 @@ ITEM.walkSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Auxiliary Gambeson";
+ITEM.name = "Gambesón del Auxiliar";
 ITEM.group = "gatekeepers/gatekeeperlight_black";
 ITEM.model = "models/begotten/headgroup_props/gatekeeperlightarmor_black.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/auxiliary_gambeson.png"
@@ -534,7 +534,7 @@ ITEM.protection = 30
 ITEM.type = "leather";
 ITEM.weight = 2;
 ITEM.weightclass = "Light";
-ITEM.description = "A studded leather gambeson with cloth sleeves dyed black, to distinguish Auxiliaries from the standard combat troops of the Gatekeepers.";
+ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de negro, para distinguir a los Auxiliares de las tropas de combate estándar de la Guardia.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -579,7 +579,7 @@ ITEM.runSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Gatekeeper Gambeson";
+ITEM.name = "Gambesón del Guardián";
 ITEM.group = "gatekeepers/gatekeeperlight";
 ITEM.model = "models/begotten/headgroup_props/gatekeeperlightarmor.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/gatekeeper_gambeson_new.png"
@@ -590,7 +590,7 @@ ITEM.protection = 30
 ITEM.type = "leather";
 ITEM.weight = 2;
 ITEM.weightclass = "Light";
-ITEM.description = "A studded leather gambeson with cloth sleeves dyed bright red. Minimalist protection for commoner guardsmen.";
+ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de rojo brillante. Protección minimalista para guardias plebeyos.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -635,7 +635,7 @@ ITEM.runSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Praeventor Gambeson";
+ITEM.name = "Gambesón del Preventor";
 ITEM.group = "gatekeepers/gatekeeperlight_brown";
 ITEM.model = "models/begotten/headgroup_props/gatekeeperlightarmor_brown.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/praeventor_gambeson.png"
@@ -646,7 +646,7 @@ ITEM.protection = 30
 ITEM.type = "leather";
 ITEM.weight = 2;
 ITEM.weightclass = "Light";
-ITEM.description = "A studded leather gambeson with cloth sleeves dyed brown, to help Praeventors blend in better in the Wasteland.";
+ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de marrón, para ayudar a los Preventores a mezclarse mejor en el Páramo.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Gatekeeper";
@@ -691,7 +691,7 @@ ITEM.runSound = {
 ITEM:Register();
 
 local ITEM = Clockwork.item:New("clothes_base");
-ITEM.name = "Renegade Disciple Robes";
+ITEM.name = "Túnica del Discípulo Renegado";
 ITEM.model = "models/begotten/headgroups_props/renegadearmor2.mdl"
 ITEM.iconoverride = "materials/begotten/ui/itemicons/renegade_disciple_armor.png"
 ITEM.category = "Armor"
@@ -702,7 +702,7 @@ ITEM.type = "leather";
 ITEM.hasHelmet = true;
 ITEM.weight = 2;
 ITEM.weightclass = "Light";
-ITEM.description = "Leather robes worn by the Gatekeepers of Pope Adyssa.";
+ITEM.description = "Túnicas de cuero usadas por los guardias del Papa Adisa.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.faction = "Pope Adyssa's Gatekeepers";

@@ -38,7 +38,7 @@ local FACTION = Clockwork.faction:New("Wanderer");
 	FACTION.useFullName = false;
 	FACTION.material = "begotten/faction/faction_logo_wanderers";
 	FACTION.color = Color(160, 100, 15);
-	FACTION.description = "The Wanderers are the carrion carcass eaters of the Wasteland. \nThey were the many lowly commoners of the County Districts, barely literate and ill-fed. \nTo survive as a Wanderer, one must be sharp and brutal, and choose their allegiance carefully. \nTheir weapons are their faith and fear, and their strife will be everlasting.";
+	FACTION.description = "Los Errantes son los carroñeros del Yermo. \nEran humildes plebeyos de los Distritos del Condado, analfábetos y mal alimentados. \nPara sobrevivir como Errante, uno debe ser agudo y brutal, y saber con quién juntarse. \nSus armas son la fe y el miedo, y su lucha será eterna.";
 	FACTION.availablefaiths = {"Faith of the Light", "Faith of the Family", "Faith of the Dark"};
 	FACTION.subfactionsToAvailableFaiths = {["Northlander"] = {"Faith of the Light", "Faith of the Family"}};
 	FACTION.imposters = true;
@@ -104,7 +104,7 @@ local FACTION = Clockwork.faction:New("Gatekeeper");
 	FACTION.useFullName = false;
 	FACTION.material = "begotten/faction/faction_logo_gatekeepers";
 	FACTION.color = Color(80, 100, 120);
-	FACTION.description = "The Gatekeepers are the front line of defence against the countless unholy horrors that threaten the Glaze. \nTheir ranks swell with conscripted power-hungry commoners and fanatical flagellants. \nThey must serve the Holy Hierarchy diligently and without question, no matter how outrageous their demands may be. \nIll-trained and poorly equipped, these soldiers are expected to lay their lives down to protect the Light. \nAnd so they shall.";
+	FACTION.description = "La Guardia es la primera línea de defensa contra los males impíos que amenazan al Destello. \nEn sus filas destacan plebeyos sedientos de poder y devotos flagelantes. \nDeben servir a la Santa Jerarquía con diligencia y sin rechistar, por escandalosas que sean sus exigencias. \nCon poca maestría en combate y apenas equipados, se espera que estos soldados den su vida para proteger la Luz. \nY así será.";
 	FACTION.availablefaiths = {"Faith of the Light"};
 	FACTION.alliedfactions = {"Hillkeeper", "Holy Hierarchy"};
 	FACTION.masterfactions = {"Holy Hierarchy"};
@@ -116,9 +116,9 @@ local FACTION = Clockwork.faction:New("Gatekeeper");
 	--FACTION.imposters = true; -- Kinisgers should get enlisted through /enlist on Wanderer disguises.
 	FACTION.names = "glazic";
 	FACTION.subfactions = {
-		{name = "Legionary", subtitle = "Legionaries - Soldiers of the Church", description = "The Holy Order of the Gatekeepers has defended the Holy Hierarchy from unholy threats since time immemorial. They have seen many changes over the years and vary considerably in strength, equipment, and number from county district to county district, but nonetheless share a singular goal: to protect the Holy Hierarchy at all costs. Legionaries represent the rank and file of this Holy Order and know only the Glaze. These men are a mix of professional soldiers, conscripted wasteland filth, and religious zealots. They serve as frontline troops and guardsmen in service of the Holy Hierarchy, often taking considerable risks to advance their ministers' goals or to defend them.", attributes = {{Color(0, 225, 0), "(+) Constant Drilling: Starts with +15 maximum stamina"}, {Color(0, 225, 0), "(+) Nourishing Rations: Starts with +25 maximum health"}, {Color(0, 225, 0), "(+) Starts at Sacrament Level 6"}, {Color(0, 225, 0), "(+) Strength in Numbers: +100% faith gain from dealing damage"}, {Color(225, 0, 0), "(-) The 'Voltism' subfaith is locked"}}},
-		{name = "Auxiliary", subtitle = "Auxilium - Smiths and Medici", description = "The backbone of the Holy Order and the purveyors of its superior ingenuity, auxiliaries uphold supply, maintain the troops, and act as reservists in combat. As Smiths they arm the ranks with superior weaponry, man the cannons and fortify defensive locations. As Medici they prevent outbreaks in the ranks and mend injuries taken from battle. They are still expected to fight if need be, though are not as often put into harm's way as their legionary kin.", attributes = {{Color(0, 225, 0), "(+) Men of Knowledge: +25% increased faith gain"}, {Color(0, 225, 0), "(+) Starts at Sacrament Level 12"}, {Color(0, 225, 0), "(+) Drilled & Nourished: Starts with +20 health and +10 stamina"}, {Color(0, 225, 0), "(+) Has +5kg extra weight capacity"}, {Color(225, 0, 0), "(-) Tier IV of the Prowess belief tree is locked"}, {Color(225, 0, 0), "(-) The 'Voltism' subfaith is locked"}}},
-		{name = "Praeventor", startingRank = 12, whitelist = true, subtitle = "Praeventores - Scouts and Assassins", description = "Taking the name of a similar unit from ancient Roman times, the Praeventores serve as a small but elite cadre of scouts, hunters, and assassins for the Holy Order. Recruited from the most loyal and skilled followers of Hard-Glaze, the Praeventores lack any standardized gear to help them blend in whilst performing their duties in the wastes. These duties include: reporting on enemy movements, scavenging valuable artifacts or needed supplies, assassinating enemies of the Holy Hierarchy or sniping targets at long range, bringing in or dispatching the targets of bounties, and gathering information.", attributes = {{Color(0, 225, 0), "(+) Excursionists: -25% stamina drain and +5% sprint speed"}, {Color(0, 225, 0), "(+) Masters of Disguise: Recognising does not reveal your rank"}, {Color(0, 225, 0), "(+) Starts at Sacrament Level 8"}, {Color(225, 0, 0), "(-) The 'Sol Orthodoxy' and 'Voltism' subfaiths are locked"}}},
+		{name = "Legionario", subtitle = "Legionarios - Soldados de la Capilla", description = "La Sagrada Orden de la Guardia ha defendido a la Santa Jerarquía de amenazas impías desde tiempos inmemoriales. Han experimentado muchos cambios a lo largo de los años y varían considerablemente en fuerza, equipo y número de un distrito a otro, pero sin embargo comparten un objetivo singular: proteger la Santa Jerarquía a toda costa. Los Legionarios representan la base de esta Sagrada Orden y sólo conocen el Destello. Estos hombres son una mezcla de soldados profesionales, suciedad de los páramos y fanáticos religiosos. Sirven como tropas de primera línea y guardias al servicio de la Santa Jerarquía, a menudo asumiendo riesgos considerables para hacer avanzar los objetivos de sus ministros o para defenderlos.", attributes = {{Color(0, 225, 0), "(+) Entrenamiento constante: Comienzas con +15 de aguante máximo"}, {Color(0, 225, 0), "(+) Raciones nutritivas: Comienzas con +25 de salud máxima"}, {Color(0, 225, 0), "(+) Comienzas con Sacramento de Nivel 6"}, {Color(0, 225, 0), "(+) Superioridad númerica: +100% ganancia de fe al hacer daño"}, {Color(225, 0, 0), "(-) La subfe 'Voltismo' está bloqueada"}}},
+		{name = "Auxiliar", subtitle = "Auxilium - Herreros y médicos", description = "La columna vertebral de la Sagrada Orden y los proveedores de su ingenio superior, los auxiliares sostienen el suministro, mantienen las tropas y actúan como reservistas en combate. Como Herreros, arman a las filas con armamento superior, tripulan los cañones y fortifican los emplazamientos defensivos. Como curanderos, previenen las infecciones en las filas y curan las heridas recibidas en combate. Se espera de ellos que luchen si es necesario, aunque no se les pone en peligro tan a menudo como a sus semejantes legionarios.", attributes = {{Color(0, 225, 0), "(+) Hombre de cultura: +25% ganancia de fe incrementada"}, {Color(0, 225, 0), "(+) Empiezas con Sacramento de Nivel 12"}, {Color(0, 225, 0), "(+) Instruido y alimentado: Empiezas con +20 de salud y +10 de aguante"}, {Color(0, 225, 0), "(+) Tienes una capacidad de +5kg extra"}, {Color(225, 0, 0), "(-) El nivel IV del árbol de Proeza está bloqueado"}, {Color(225, 0, 0), "(-) La subfe 'Voltismo' está bloqueada"}}},
+		{name = "Preventor", startingRank = 12, whitelist = true, subtitle = "Preventores - Exploradores y Asesinos", description = "Tomando el nombre de una unidad similar de la época romana, los Preventores son un pequeño grupo de élite de exploradores, cazadores y asesinos de la Sagrada Orden. Reclutados entre los seguidores más leales y hábiles del Destello Santo, los Preventores carecen de equipo estandarizado que les ayude a pasar desapercibidos mientras desempeñan sus tareas en los páramos. Estas tareas incluyen: informar de los movimientos del enemigo, buscar artefactos valiosos o suministros necesarios, asesinar a enemigos de la Santa Jerarquía o disparar a objetivos a larga distancia, traer o liquidar a los objetivos de las recompensas y recopilar información.", attributes = {{Color(0, 225, 0), "(+) Excursionistas: -25% de agotamiento de aguante y +5% de velocidad de esprint"}, {Color(0, 225, 0), "(+) Maestros del Disfraz: Reconocerte no revela tu rango"}, {Color(0, 225, 0), "(+) Comienzas con Sacramento de Nivel 8"}, {Color(225, 0, 0), "(-) Las subfes 'Voltismo' y 'Ortodoxo del Sol' están bloqueadan"}}},
 	};
 	FACTION.residualXPZones = { -- Zones that boost residual XP gain for this faction.
 		["rp_begotten3"] = {
@@ -209,44 +209,44 @@ local FACTION = Clockwork.faction:New("Gatekeeper");
 	end
 	
 	Schema.Ranks["Gatekeeper"] = {
-		[1] = "Disciple",
-		[2] = "Acolyte",
-		[3] = "Artificer",
-		[4] = "Forgemaster",
-		[5] = "Medicus",
-		[6] = "Master Medicus",
-		[7] = "Emissary",
-		[8] = "Vexillifer",
-		[9] = "Squire",
-		[10] = "High Gatekeeper",
-		[11] = "Master-At-Arms",
-		[12] = "Scout",
-		[13] = "Master Scout",
-		[14] = "Acolyte-Evocatus",
+		[1] = "Discípulo",
+		[2] = "Acólito",
+		[3] = "Artífice",
+		[4] = "Maese de la Forja",
+		[5] = "Médico",
+		[6] = "Maese Medicus",
+		[7] = "Emisario",
+		[8] = "Vexilarius",
+		[9] = "Escudero",
+		[10] = "Gran Maestre",
+		[11] = "Maestre de Campo",
+		[12] = "Explorador",
+		[13] = "Maese Explorador",
+		[14] = "Acólito-Evocatus",
 	};
 	
 	Schema.RankTiers["Gatekeeper"] = {
-		[1] = {"Disciple"},
-		[2] = {"Acolyte", "Acolyte-Evocatus", "Artificer", "Medicus", "Scout"},
-		[3] = {"Emissary", "Forgemaster", "Master Medicus", "Master Scout", "Vexillifer", "Squire"},
-		[4] = {"High Gatekeeper"},
-		[5] = {"Master-At-Arms"},
+		[1] = {"Discípulo"},
+		[2] = {"Acólito", "Acólito-Evocatus", "Artífice", "Médico", "Explorador"},
+		[3] = {"Emisario", "Maese de la Forja", "Maese Medicus", "Maese Explorador", "Vexilarius", "Escudero"},
+		[4] = {"Gran Maestre"},
+		[5] = {"Maestre de Campo"},
 	};
 	
 	Schema.RanksToBuffs["Gatekeeper"] = {
-		["Master-At-Arms"] = {health = 50, stamina = 50},
+		["Maestre de Campo"] = {health = 50, stamina = 50},
 	};
 	
 	-- Do not grant wages to these ranks if they are inside the safezone.
 	Schema.RanksRestrictedWages["Gatekeeper"] = {1, 2, 12, 13, 14};
 	
 	Schema.RanksToSubfaction["Gatekeeper"] = {
-		["Artificer"] = "Auxiliary",
-		["Forgemaster"] = "Auxiliary",
-		["Medicus"] = "Auxiliary",
-		["Master Medicus"] = "Auxiliary",
-		["Scout"] = "Praeventor",
-		["Master Scout"] = "Praeventor",
+		["Artífice"] = "Auxiliar",
+		["Maese de la Forja"] = "Auxiliar",
+		["Médico"] = "Auxiliar",
+		["Maese Medicus"] = "Auxiliar",
+		["Explorador"] = "Preventor",
+		["Maese Explorador"] = "Preventor",
 	};
 	
 	Schema.RanksToCoin["Gatekeeper"] = {
