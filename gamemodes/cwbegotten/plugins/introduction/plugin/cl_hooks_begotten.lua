@@ -122,13 +122,13 @@ end
 
 local BegottenWidth = GetFontWidth("nov_IntroTextSmallaaaa", "BEGOTTEN")
 local BegottenHeight = GetFontHeight("nov_IntroTextSmallaaaa", "BEGOTTEN")
-local JesusWeptHeight = GetFontHeight("nx_IntroTextSmalls", "JESUS WEPT")
-local JesusWeptWidth = GetFontWidth("nx_IntroTextSmalls", "JESUS WEPT")
-local JeWidth = GetFontWidth("nx_IntroTextSmalls", "JE")
-local JesusWidth = GetFontWidth("nx_IntroTextSmalls", "JESUS ")
-local ThreeWidth = GetFontWidth("nov_IntroTextSmallaaaa", "I I I")
-local JesusWeWidth = GetFontWidth("nx_IntroTextSmalls", "JESUS WE")
-local flashes = {"KILL","FLESH","DIE","BITCH","WHORE","COLD POP","YUM CHUG","HUNTER","CHANTIAM","POP","FUCK","KILL","KILL","GLAZE","GORE","WAR","VILLAGE","BURN","ROTTING","FLIES","RANCID","POPE","HIERARCHY","DARK","LIGHT","CAGE","TORTURE","DISMEMBER","CUT","MAIM","LORD","CHURCH","TOWER","ITZUTAK","BEGOTTEN","DEATH","HELL","INFERNO","LICK","TWISTED","TWISTED FUCK","CORPSE","FLAME","FORGOTTEN",}
+local JesusWeptHeight = GetFontHeight("nx_IntroTextSmalls", "SALVE MAXIMUS")
+local JesusWeptWidth = GetFontWidth("nx_IntroTextSmalls", "SALVE MAXIMUS")
+local JeWidth = GetFontWidth("nx_IntroTextSmalls", "SAL")
+local JesusWidth = GetFontWidth("nx_IntroTextSmalls", "SALVE ")
+local ThreeWidth = GetFontWidth("nov_IntroTextSmallaaaa", "EL NUEVO MUNDO")
+local JesusWeWidth = GetFontWidth("nx_IntroTextSmalls", "SALVE MAX")
+local flashes = {"MUERE","CARNE","MATA","PUTA","ZORRA","REFRESCANTE","RICO TRAGO","CAZADOR","OREMOS","POP","FOLLAR","MATAR","MATAR","GLAZE","GORE","GUERRA","POBLADO","QUEMAR","PODRIDO","MOSCAS","RANCIO","PAPA","JERARQUIA","OSCURIDAD","LUZ","JAULA","TORTURA","MUTILAR","CORTAR","LISIAR","LORD","ERMITA","TORRE","ENGENDRO","MUERTE","INFIERNO","INFERNO","LAMER","RETORCIDO","CABRÓN RETORCIDO","ASESINADO","LLAMA","OLVIDADO",}
 local fonts = {"nov_IntroTextSmallaaaa", "nx_IntroTextSmalls", "nov_IntroTextSmallaaaaa"}
 local colRed = Color(170, 170, 170, 255)
 local colBlack = Color(0, 0, 0, 255)
@@ -424,8 +424,8 @@ function cwIntroduction:RenderScreenspaceEffects()
 					
 					draw.RoundedBox(0, 0, 0, scrW, scrH, Color(255, 255, 255, DARS2))
 
-					surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
-					surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
+					surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
+					surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
 				
 					if (DARS2 !=0) then
 						DARS2 = math.Approach(DARS2, 0, ft * 256)
@@ -446,15 +446,15 @@ function cwIntroduction:RenderScreenspaceEffects()
 					
 					rot = 0
 					
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
 					
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colred5)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colred5)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot,colred5)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot,colred5)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colred5)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colred5)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot,colred5)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot,colred5)
 					
 					if (DARS3 !=0) then
 						DARS3 = math.Approach(DARS3, 0, ft * 256)
@@ -586,8 +586,8 @@ function cwIntroduction:RenderScreenspaceEffects()
 					
 					if (ratva == 0 or math.random(1, 5) == 5) then
 						rot = rot * math.random(0.5, 1.5)
-						surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
-						surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
+						surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
+						surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
 					end
 					
 					local rot = 0
@@ -596,15 +596,15 @@ function cwIntroduction:RenderScreenspaceEffects()
 						rot = math.random(-15, 15)
 					end
 
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
 					
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colgrey)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colgrey)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, colgrey)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, colgrey)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colgrey)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colgrey)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, colgrey)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, colgrey)
 					DrawSharpen(math.random(-5, 5), math.random(5, -5))
 				end
 			else
@@ -721,8 +721,8 @@ function cwIntroduction:RenderScreenspaceEffects()
 
 					if (ratva == 0 or math.random(1, 5) == 5) then
 						rot = rot * math.random(0.5, 1.5)
-						surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
-						surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
+						surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
+						surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
 					end
 					
 					local rot = 0
@@ -731,15 +731,15 @@ function cwIntroduction:RenderScreenspaceEffects()
 						rot = math.random(-15, 15)
 					end
 
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
 					local jes = Color(15, 15, 15)
-					surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, jes)
-					surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, jes)
-					surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, jes)
-					surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, jes)
+					surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, jes)
+					surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, jes)
+					surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, jes)
+					surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, jes)
 					DrawSharpen(math.random(-5, 5), math.random(5, -5))
 				end
 			else
@@ -768,8 +768,8 @@ function cwIntroduction:RenderScreenspaceEffects()
 				
 				draw.RoundedBox(0, 0, 0, ScrW(), ScrH(), Color(255, 255, 255, Clockwork.Client.dAPD))
 				local rot = 0
-				surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
-				surface.DrawRotatedText("I I I", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
+				surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid + 4, oth + 4 - begotaha, rot, colBlack)
+				surface.DrawRotatedText("EL NUEVO MUNDO", "nov_IntroTextSmallaaaa", half - threewid, oth - begotaha, rot, colgrey)
 			end
 			
 			if (Clockwork.Client.JEsusWeptShown) then
@@ -781,14 +781,14 @@ function cwIntroduction:RenderScreenspaceEffects()
 				
 				draw.RoundedBox(0, 0, 0, ScrW(), ScrH(), Color(255, 255, 255, Clockwork.Client.AdPD))
 				local rot = math.random(-5, 5)
-				surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-				surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-				surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-				surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
-				surface.DrawRotatedText("JE", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colgrey)
-				surface.DrawRotatedText("SUS", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colgrey)
-				surface.DrawRotatedText("WE", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, colgrey)
-				surface.DrawRotatedText("PT", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, colgrey)
+				surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+				surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+				surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+				surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth + 4, haflfHE - halfweptheight + 4, rot, colBlack)
+				surface.DrawRotatedText("SAL", "nx_IntroTextSmalls", half - halfweptwidth, haflfHE - halfweptheight, rot, colgrey)
+				surface.DrawRotatedText("VE", "nx_IntroTextSmalls", half - halfweptwidth + JeWidth, haflfHE - halfweptheight, rot, colgrey)
+				surface.DrawRotatedText("MAXI", "nx_IntroTextSmalls", half - halfweptwidth + JesusWidth, haflfHE - halfweptheight, rot, colgrey)
+				surface.DrawRotatedText("MUS", "nx_IntroTextSmalls", half - halfweptwidth + JesusWeWidth, haflfHE - halfweptheight, rot, colgrey)
 			end
 		end
 		

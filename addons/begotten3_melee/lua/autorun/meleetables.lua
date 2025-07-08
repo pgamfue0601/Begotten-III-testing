@@ -2393,7 +2393,7 @@ AttackTables.PipeAttackTable = {
 	["delay"] = 0.7,
 	["striketime"] = 0.3,
 	["meleearc"] = 35,
-	["meleerange"] = 500,
+	["meleerange"] = 535,
 	["punchstrength"] = Angle(0,1,0),
 };
 
@@ -2409,10 +2409,10 @@ AttackTables.PipeMaceAttackTable = {
 	["poisedamage"] = 12,
 	["stabilitydamage"] = 27,
 	["takeammo"] = 2,
-	["delay"] = 0.75,
+	["delay"] = 0.7,
 	["striketime"] = 0.3,
 	["meleearc"] = 35,
-	["meleerange"] = 500,
+	["meleerange"] = 535,
 	["punchstrength"] = Angle(0,1,0),
 };
 
@@ -2561,25 +2561,6 @@ AttackTables.GoreHuntingDaggerAttackTable = {
 	["altattackdamagemodifier"] = nil,
 	["altattackpoisedamagemodifier"] = nil,
 	["armorpiercing"] = 18,
-	["altarmorpiercing"] = nil,
-	["poisedamage"] = 0,
-	["stabilitydamage"] = 0,
-	["takeammo"] = 2,
-	["delay"] = 0.65,
-	["striketime"] = 0.2,
-	["meleearc"] = 15,
-	["meleerange"] = 475,
-	["punchstrength"] = Angle(0,1,0),
-};
-
-AttackTables.ClanReaverDaggerAttackTable = {
-	["primarydamage"] = 21,
-	["dmgtype"] = 16,
-	["attacktype"] = "reg_swing",
-	["canaltattack"] = false,
-	["altattackdamagemodifier"] = nil,
-	["altattackpoisedamagemodifier"] = nil,
-	["armorpiercing"] = 30,
 	["altarmorpiercing"] = nil,
 	["poisedamage"] = 0,
 	["stabilitydamage"] = 0,
@@ -3739,7 +3720,6 @@ AddTable("FlangedMaceAttackTable", AttackTables.FlangedMaceAttackTable)
 AddTable("MorningStarAttackTable", AttackTables.MorningStarAttackTable)  
 AddTable("BoneMaceAttackTable", AttackTables.BoneMaceAttackTable)          
 AddTable("GoreHuntingDaggerAttackTable", AttackTables.GoreHuntingDaggerAttackTable)
-AddTable("ClanReaverDaggerAttackTable", AttackTables.ClanReaverDaggerAttackTable)
 AddTable("QuickshankAttackTable", AttackTables.QuickshankAttackTable)    
 AddTable("ParryingDaggerAttackTable", AttackTables.ParryingDaggerAttackTable)
 AddTable("KnightsbaneAttackTable", AttackTables.KnightsbaneAttackTable)  
@@ -4755,24 +4735,6 @@ BlockTables.GoreHuntingDaggerBlockTable = {
 	["raisespeed"] = 1.25,
 	["instantraise"] = true,
 	["parrydifficulty"] = 0.2,
-	["parrytakestamina"] = 5,
-	["canparry"] = true,
-	["candeflect"] = true,
-};
-
-BlockTables.ClanReaverDaggerBlockTable = {
-	["guardblockamount"] = 10,
-	["specialeffect"] = false,
-	["blockeffect"] = "MetalSpark",
-	["blockeffectforward"] = 30,
-	["blockeffectpos"] = (Vector(5, 0, 60)),
-	["blockcone"] = 135,
-	["blockdamagetypes"] = {DMG_SLASH, DMG_CLUB, DMG_VEHICLE},
-	["partialbulletblock"] = false,
-	["poiseresistance"] = 0,
-	["raisespeed"] = 1.25,
-	["instantraise"] = true,
-	["parrydifficulty"] = 0.25,
 	["parrytakestamina"] = 5,
 	["canparry"] = true,
 	["candeflect"] = true,
@@ -6472,7 +6434,6 @@ AddTable("ElegantEpeeBlockTable", BlockTables.ElegantEpeeBlockTable)
 AddTable("FlangedMaceBlockTable", BlockTables.FlangedMaceBlockTable)  
 AddTable("MorningStarBlockTable", BlockTables.MorningStarBlockTable)    
 AddTable("GoreHuntingDaggerBlockTable", BlockTables.GoreHuntingDaggerBlockTable)    
-AddTable("ClanReaverDaggerBlockTable", BlockTables.ClanReaverDaggerBlockTable)  
 AddTable("QuickshankBlockTable", BlockTables.QuickshankBlockTable)    
 AddTable("ParryingDaggerBlockTable", BlockTables.ParryingDaggerBlockTable) 
 AddTable("KnightsbaneBlockTable", BlockTables.KnightsbaneBlockTable)   
