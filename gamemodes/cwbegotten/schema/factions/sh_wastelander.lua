@@ -33,7 +33,7 @@ RANDOM_SURNAMES = {
 	}
 };
 
-local FACTION = Clockwork.faction:New("Errante");
+local FACTION = Clockwork.faction:New("Wanderer");
 	FACTION.disabled = false; -- For events.
 	FACTION.useFullName = false;
 	FACTION.material = "begotten/faction/faction_logo_wanderers";
@@ -92,7 +92,7 @@ local FACTION = Clockwork.faction:New("Errante");
 	end;
 FACTION_WANDERER = FACTION:Register();
 
-local FACTION = Clockwork.faction:New("Guardian");
+local FACTION = Clockwork.faction:New("Gatekeeper");
 	if game.GetMap() == "rp_district21" then
 		FACTION.disabled = true;
 		FACTION.hidden = true;
@@ -138,7 +138,7 @@ local FACTION = Clockwork.faction:New("Guardian");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Errante" and faction.name != "Holy Hierarchy") then
+		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end
@@ -149,8 +149,8 @@ local FACTION = Clockwork.faction:New("Guardian");
 			return false;
 		end]]--
 		
-		if (!Clockwork.player:IsWhitelisted(player, "Guardian")) then
-			Clockwork.player:SetWhitelisted(player, "Guardian", true);
+		if (!Clockwork.player:IsWhitelisted(player, "Gatekeeper")) then
+			Clockwork.player:SetWhitelisted(player, "Gatekeeper", true);
 		end;
 	end;
 	
@@ -208,7 +208,7 @@ local FACTION = Clockwork.faction:New("Guardian");
 		Schema.RanksToCoin = {};
 	end
 	
-	Schema.Ranks["Guardian"] = {
+	Schema.Ranks["Gatekeeper"] = {
 		[1] = "Discípulo",
 		[2] = "Acólito",
 		[3] = "Artífice",
@@ -225,7 +225,7 @@ local FACTION = Clockwork.faction:New("Guardian");
 		[14] = "Acólito-Evocatus",
 	};
 	
-	Schema.RankTiers["Guardian"] = {
+	Schema.RankTiers["Gatekeeper"] = {
 		[1] = {"Discípulo"},
 		[2] = {"Acólito", "Acólito-Evocatus", "Artífice", "Médico", "Explorador"},
 		[3] = {"Emisario", "Maese de la Forja", "Maese Medicus", "Maese Explorador", "Vexilarius", "Escudero"},
@@ -233,14 +233,14 @@ local FACTION = Clockwork.faction:New("Guardian");
 		[5] = {"Maestre de Campo"},
 	};
 	
-	Schema.RanksToBuffs["Guardian"] = {
+	Schema.RanksToBuffs["Gatekeeper"] = {
 		["Maestre de Campo"] = {health = 50, stamina = 50},
 	};
 	
 	-- Do not grant wages to these ranks if they are inside the safezone.
-	Schema.RanksRestrictedWages["Guardian"] = {1, 2, 12, 13, 14};
+	Schema.RanksRestrictedWages["Gatekeeper"] = {1, 2, 12, 13, 14};
 	
-	Schema.RanksToSubfaction["Guardian"] = {
+	Schema.RanksToSubfaction["Gatekeeper"] = {
 		["Artífice"] = "Auxiliar",
 		["Maese de la Forja"] = "Auxiliar",
 		["Médico"] = "Auxiliar",
@@ -249,7 +249,7 @@ local FACTION = Clockwork.faction:New("Guardian");
 		["Maese Explorador"] = "Preventor",
 	};
 	
-	Schema.RanksToCoin["Guardian"] = {
+	Schema.RanksToCoin["Gatekeeper"] = {
 		[1] = 25,
 		[2] = 35,
 		[3] = 35,
@@ -298,7 +298,7 @@ local FACTION = Clockwork.faction:New("Holy Hierarchy");
 	FACTION.color = Color(225, 175, 0);
 	FACTION.description = "The Holy Hierarchy upholds the ancient superiority of the enlightened few. \nAmongst the dark sea of bastard blood and uncivilized rabble, they are the adjudicators and administrators to enforce Holy Light. \nStill, many are corrupt, seeking self indulgence rather than directing rights. \nAfter all, from their high seats, there are none above them to look down in judgement."
 	FACTION.availablefaiths = {"Faith of the Light"};
-	FACTION.alliedfactions = {"Guardian", "Hillkeeper"};
+	FACTION.alliedfactions = {"Gatekeeper", "Hillkeeper"};
 	FACTION.enlist = true;
 	FACTION.ratio = 0.1; -- 0.1 slots per player (3 at 30 players).
 	--FACTION.imposters = true;
@@ -726,7 +726,7 @@ local FACTION = Clockwork.faction:New("Pope Adyssa's Gatekeepers");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Errante" and faction.name != "Holy Hierarchy") then
+		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end
@@ -828,7 +828,7 @@ local FACTION = Clockwork.faction:New("The Third Inquisition");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Errante" and faction.name != "Holy Hierarchy" and faction.name != "Guardian") then
+		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
 			return false;
 		end;
 		
@@ -862,7 +862,7 @@ local FACTION = Clockwork.faction:New("Smog City Pirate");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name ~= "Errante") then
+		if (faction.name ~= "Wanderer") then
 			return false;
 		end;
 		
@@ -911,7 +911,7 @@ local FACTION = Clockwork.faction:New("Hillkeeper");
 	FACTION.material = "begotten/faction/faction_logo_hillkeepers";
 	FACTION.color = Color(103, 142, 180);
 	FACTION.description = "The Goreic-Glazemen of the Hill are a simple, hardy folk. They have raised their blades and bats and hooks against the darkness for generations. \nThey don't fight for coin, but for survival and family. All must pull together to survive in the empty cold. \nPagan heresy spreads once more through the ranks, but many still stand faithful and loyal to the Light no matter the cost. \nNow they must stand resolute against the coming darkness, even as the long night draws close. The Hill must not fall. \nGlory awaits the bold and daring.";	FACTION.availablefaiths = {"Faith of the Light"};
-	FACTION.alliedfactions = {"Holy Hierarchy", "Guardian"};
+	FACTION.alliedfactions = {"Holy Hierarchy", "Gatekeeper"};
 	FACTION.masterfactions = {"Holy Hierarchy"};
 	FACTION.enlist = true;
 	FACTION.promoteAcrossSubfactions = true;
@@ -984,7 +984,7 @@ local FACTION = Clockwork.faction:New("Hillkeeper");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Errante" and faction.name != "Holy Hierarchy" and faction.name != "Guardian") then
+		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end

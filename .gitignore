@@ -54,3 +54,5 @@ settings/users.txt
 
 addons/custom/
 gamemodes/clockwork/clockwork.cfg
+settings/clockwork/schemas/cwbegotten/plugins/radios/rp_begotten3.cw
+settings/clockwork/schemas/cwbegotten/itemIndex.cw
