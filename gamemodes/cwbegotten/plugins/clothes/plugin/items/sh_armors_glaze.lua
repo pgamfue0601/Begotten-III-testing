@@ -292,7 +292,7 @@ ITEM.weightclass = "Medium";
 ITEM.description = "Armadura de placas de hierro utilizada habitualmente por la Sagrada Orden de la Guardia.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -352,7 +352,7 @@ ITEM.weightclass = "Medium";
 ITEM.description = "Una armadura mejorada basada en la utilizada por la Sagrada Orden de la Guardia, reforzada con acero fino y placas adicionales.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -412,7 +412,7 @@ ITEM.weightclass = "Medium";
 ITEM.description = "Una costosa armadura chapada en oro basada en la utilizada por la Sagrada Orden de la Guardia, reforzada con acero fino y placas adicionales.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -473,7 +473,7 @@ ITEM.description = "La armadura dorada y ornamentada de un Vexilarius, reforzada
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.requiredFaiths = {"Faith of the Light"};
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.attributes = {"fear", "banner_blessing"};
 ITEM.kinisgerOverride = true;
@@ -537,7 +537,7 @@ ITEM.weightclass = "Light";
 ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de negro, para distinguir a los Auxiliares de las tropas de combate estándar de la Guardia.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -593,7 +593,7 @@ ITEM.weightclass = "Light";
 ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de rojo brillante. Protección minimalista para guardias plebeyos.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -649,7 +649,7 @@ ITEM.weightclass = "Light";
 ITEM.description = "Un gambesón de cuero tachonado con mangas de tela teñidas de marrón, para ayudar a los Preventores a mezclarse mejor en el Páramo.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -1845,7 +1845,7 @@ ITEM.description = "Further augmented by increased steel thickness, this plate i
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.overlay = "begotten/zomboverlay/new/gatekeeperhelmet";
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.requiredbeliefs = {"hauberk"};
 
@@ -1916,7 +1916,7 @@ ITEM.description = "A sturdy set of steel plate armor, scarred by constant battl
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
 ITEM.overlay = "begotten/zomboverlay/new/gatekeeperhelmet";
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.requiredbeliefs = {"hauberk"};
 
@@ -2262,9 +2262,9 @@ ITEM.weight = 7;
 ITEM.weightclass = "Medium";
 ITEM.description = "A unique set of Gatekeeper plate made of the finest materials, designed specifically to protect the Master-at-Arms.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Gatekeeper"};
+ITEM.requiredFactions = {"Guardian"};
 ITEM.requiredRanks = {"Master-At-Arms"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -2385,7 +2385,7 @@ ITEM.weightclass = "Medium";
 ITEM.description = "A breastplate worn over Gambeson bearing the colors of the Holy Order of the Gatekeepers. A cheap but highly practical piece of armor.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -2445,7 +2445,7 @@ ITEM.weightclass = "Medium";
 ITEM.description = "A breastplate worn over a Gambeson with white sleeves and a red cross painted on the front, the colors of the Medici of the Holy Order of Gatekeepers. A cheap but highly practical piece of armor which allows for easy identification in the battlefield.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.excludedFactions = {"Goreic Warrior"};
-ITEM.faction = "Gatekeeper";
+ITEM.faction = "Guardian";
 ITEM.attributes = {"practitioner"};
 
 ITEM.effectiveLimbs = {
