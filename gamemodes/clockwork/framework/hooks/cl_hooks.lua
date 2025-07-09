@@ -3555,7 +3555,7 @@ function GM:ShouldPlayerScreenFadeBlack()
 			draw.RoundedBox(0, 0, 0, scrW, scrH, Color(0, 0, 0, 255));
 			
 			if !Clockwork.Client:Alive() then
-				draw.SimpleText("You have been corpsed.", introTextSmallFont, scrW / 2, scrH / 2, Color(170, 0, 0, 255), 1, 1);
+				draw.SimpleText("Hasta aquí llegó tu historia.", introTextSmallFont, scrW / 2, scrH / 2, Color(170, 0, 0, 255), 1, 1);
 			end
 		
 			return true;

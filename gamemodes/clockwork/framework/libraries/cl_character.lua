@@ -327,7 +327,7 @@ function Clockwork.character:RefreshPanelList()
 		end);
 		
 		panel.label = vgui.Create("DLabel", panel);
-		panel.label:SetText("SELECT YOUR VESSEL...");
+		panel.label:SetText("SELECCIONA A TU PORTADOR...");
 		panel.label:SetTextColor(Color(255, 255, 255));
 		panel.label:SetFont("nov_IntroTextSmallaaafaa");
 		panel.label:SizeToContents();
@@ -381,8 +381,8 @@ function Clockwork.character:RefreshPanelList()
 
 			panel.cancelButton = vgui.Create("cwLabelButton", panel);
 			panel.cancelButton:SetFont("demiurgemenuTextDistrict21Menu");
-			panel.cancelButton:SetText("Return");
-			panel.cancelButton.aText = "Return";
+			panel.cancelButton:SetText("Regresa");
+			panel.cancelButton.aText = "Regresa";
 			panel.cancelButton:SetCallback(function(panel)
 				Clockwork.character:GetPanel():ReturnToMainMenu();
 			end);
@@ -415,8 +415,8 @@ function Clockwork.character:RefreshPanelList()
 
 			panel.enterHellButton = vgui.Create("cwLabelButton", panel);
 			panel.enterHellButton:SetFont("demiurgemenuTextDistrict21Menu");
-			panel.enterHellButton:SetText("Enter the Forest");
-			panel.enterHellButton.aText = "Enter the Forest"
+			panel.enterHellButton:SetText("Entra al Bosque");
+			panel.enterHellButton.aText = "Entra al Bosque";
 			panel.enterHellButton:SetCallback(function(panel)
 				Clockwork.character:GetPanel():ReturnToMainMenu();
 			end);
@@ -431,11 +431,11 @@ function Clockwork.character:RefreshPanelList()
 			end;
 		else
 			local smallTextFont = Clockwork.option:GetFont("menu_text_small");
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "RETURN");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "REGRESA");
 			
 			panel.cancelButton = vgui.Create("cwLabelButton", panel);
 			panel.cancelButton:SetFont(smallTextFont);
-			panel.cancelButton:SetText("RETURN");
+			panel.cancelButton:SetText("REGRESA");
 			panel.cancelButton:SetCallback(function(panel)
 				Clockwork.character:GetPanel():ReturnToMainMenu();
 			end);
@@ -446,7 +446,7 @@ function Clockwork.character:RefreshPanelList()
 			
 			function panel.cancelButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"RETURN", "rEtUrN", "ReTuRn"};
+					local texts = {"REGRESA", "rEgReSa", "ReGrEsA"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -477,7 +477,7 @@ function Clockwork.character:RefreshPanelList()
 			
 			panel.enterHellButton = vgui.Create("cwLabelButton", panel);
 			panel.enterHellButton:SetFont(smallTextFont);
-			panel.enterHellButton:SetText("ENTER HELL");
+			panel.enterHellButton:SetText("ENTRA AL INFIERNO");
 			panel.enterHellButton:SetCallback(function(panel)
 				local valid_characters = {};
 				local name = Clockwork.Client:Name(true);
@@ -507,7 +507,7 @@ function Clockwork.character:RefreshPanelList()
 			
 			function panel.enterHellButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"ENTER HELL", "eNtEr HeLl", "EnTeR hElL"};
+					local texts = {"ENTRA AL INFIERNO", "eNtRa Al InFiErNo", "EnTrA aL iNfIeRnO"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))

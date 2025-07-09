@@ -1746,12 +1746,12 @@ function PANEL:Init()
 	self.faithLabel:SetSize(180, 18);
 
 	self.sacramentsLabel = vgui.Create("DLabel", self);
-	self.sacramentsLabel:SetText("Sacrament de Nivel: 1");
+	self.sacramentsLabel:SetText("Sacramento de Nivel: 1");
 	self.sacramentsLabel:SetTextColor(Color(160, 145, 145));
 	self.sacramentsLabel:SetFont("Decay_FormText");
 	self.sacramentsLabel:SetPos(348, 36);
 	self.sacramentsLabel:SetSize(180, 18);
-	self.sacramentsLabel:SetText("Sacrament de Nivel: "..self.customData.level);
+	self.sacramentsLabel:SetText("Sacramento de Nivel: "..self.customData.level);
 	
 	self.timeSurvivedLabel = vgui.Create("DLabel", self);
 	self.timeSurvivedLabel:SetTextColor(Color(160, 145, 145));
@@ -2234,19 +2234,19 @@ function PANEL:Init()
 	Clockwork.Client.CurrentGender = GENDER_MALE;
 	
 	if game.GetMap() == "rp_district21" then
-		panel.nextButton:SetText("Create");
-		panel.nextButton.aText = "Create";
+		panel.nextButton:SetText("Crear");
+		panel.nextButton.aText = "Crear";
 		panel.nextButton:SizeToContents();
 		panel.nextButton:SetText("");
 		panel.nextButton.Paint = function(panel, w, h)
 			Clockwork.character:KillMePlease(panel);
 		end;
 	else
-		panel.nextButton:SetText("CREATE");
+		panel.nextButton:SetText("CREAR");
 		panel.nextButton:SizeToContents();
 		panel.nextButton.Paint = function(panel, w, h)
 			if (panel:GetHovered()) then
-				local texts = {"CrEaTe", "cReAtE"};
+				local texts = {"CrEaR", "cReAr"};
 				
 				for i = 1, math.random(2, 4) do
 					surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
