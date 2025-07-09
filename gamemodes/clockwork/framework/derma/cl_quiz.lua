@@ -37,7 +37,7 @@ function PANEL:Init()
 	
 	self.disconnectButton = vgui.Create("cwLabelButton", self);
 	self.disconnectButton:SetFont(smallTextFont);
-	self.disconnectButton:SetText("DISCONNECT");
+	self.disconnectButton:SetText("DESCONECTAR");
 	self.disconnectButton:FadeIn(0.5);
 	self.disconnectButton:SetCallback(function(panel)
 		RunConsoleCommand("disconnect");
@@ -48,7 +48,7 @@ function PANEL:Init()
 		
 	self.continueButton = vgui.Create("cwLabelButton", self);
 	self.continueButton:SetFont(smallTextFont);
-	self.continueButton:SetText("CONTINUE");
+	self.continueButton:SetText("CONTINUAR");
 	self.continueButton:FadeIn(0.5);
 	self.continueButton:SetCallback(function(panel)
 		netstream.Start("QuizCompleted", true);
@@ -83,7 +83,7 @@ function PANEL:Populate()
 	self.panelList:Clear(true);
 	
 	local label = vgui.Create("cwInfoText", self);
-		label:SetText("If any answers are incorrect, you may be kicked from the server.");
+		label:SetText("Si alguna de las respuestas son incorrectas, serás expulsado.");
 		label:SetInfoColor("orange");
 	self.panelList:AddItem(label);
 

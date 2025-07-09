@@ -105,13 +105,13 @@ Clockwork.config:ShareKey("intro_text_big");]]--
 
 Clockwork.quiz:SetName("Consider These Fucking Questions Carefully");
 Clockwork.quiz:SetEnabled(true);
-Clockwork.quiz:AddQuestion("Do you understand that the admins of this server are omnipotent all-powerful beings, and that you, by joining this server, are their playthings?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Do you understand that this server features explicit content and themes related to occultism, extreme violence, and strong language?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Do you understand that all deaths are permanent kills, and S2K is enabled at all times outside of safezones?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Do you understand that despite this server featuring over-the-top ridiculous and comical themes, you are still expected to remain in-character all times?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Do you understand that survival is extremely hard and you are most likely going to die very soon?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Do you understand that you should not play this server if you are an epileptic?", 1, "Yes.", "No.");
-Clockwork.quiz:AddQuestion("Repeat the phrase. I am nothing but fodder for the gods of this world.", 2, "I refuse.", "I am nothing but fodder for the gods of this world.");
+Clockwork.quiz:AddQuestion("¿Comprendes que los administradores de este servidor son seres omnipotentes y todopoderosos, y que tú, al unirte a este servidor, eres su juguete?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("¿Comprendes que este servidor presenta contenidos explícitos y temas relacionados con el ocultismo, la violencia extrema y el lenguaje fuerte?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("¿Comprendes que todas las muertes son permanentes y que el S2K está activado en todo momento fuera de las zonas seguras?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("¿Comprendes que, a pesar de que este servidor presenta temas ridículos y cómicos, se espera que te mantengas siempre dentro de tu personaje?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("¿Comprendes que la supervivencia es extremadamente dura y que lo más probable es que mueras muy pronto?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("¿Comprendes que no debes jugar en este servidor si eres epiléptico?", 1, "Sí.", "No.");
+Clockwork.quiz:AddQuestion("Repite la frase. No soy más que pasto para los dioses de este mundo.", 2, "Me niego.", "No soy más que pasto para los dioses de este mundo.");
 
 -- A function to get if a position is within a box.
 function Schema:IsInBox(firstVector, secondVector, position, bOptimized, delay)
