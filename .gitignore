@@ -54,13 +54,9 @@ settings/users.txt
 
 addons/custom/
 gamemodes/clockwork/clockwork.cfg
-settings/clockwork/schemas/cwbegotten/plugins/radios/rp_begotten3.cw
-settings/clockwork/schemas/cwbegotten/itemIndex.cw
-settings/clockwork/schemas/cwbegotten/itemIndex.cw
-settings/clockwork/schemas/cwbegotten/plugins/items/rp_begotten3.cw
-settings/clockwork/schemas/cwbegotten/plugins/shacks/rp_begotten3.cw
-settings/clockwork/schemas/cwbegotten/plugins/storage/rp_begotten3.cw
-settings/clockwork/schemas/cwbegotten/plugins/salesmen/rp_begotten3.cw
-settings/clockwork/schemas/cwbegotten/plugins/radios/rp_begotten3.cw
-
-*.cw
+settings/clockwork/schemas/cwbegotten/*.cw
+settings/clockwork/schemas/cwbegotten/plugins/items/*.cw
+settings/clockwork/schemas/cwbegotten/plugins/shacks/*.cw
+settings/clockwork/schemas/cwbegotten/plugins/storage/*.cw
+settings/clockwork/schemas/cwbegotten/plugins/salesmen/*.cw
+settings/clockwork/schemas/cwbegotten/plugins/radios/*.cw
