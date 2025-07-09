@@ -103,7 +103,7 @@ Clockwork.config:ShareKey("discord_url");
 --[[Clockwork.config:ShareKey("intro_text_small");
 Clockwork.config:ShareKey("intro_text_big");]]--
 
-Clockwork.quiz:SetName("Consider These Fucking Questions Carefully");
+Clockwork.quiz:SetName("Considera Estas Putas Preguntas Cuidadosamente");
 Clockwork.quiz:SetEnabled(true);
 Clockwork.quiz:AddQuestion("¿Comprendes que los administradores de este servidor son seres omnipotentes y todopoderosos, y que tú, al unirte a este servidor, eres su juguete?", 1, "Sí.", "No.");
 Clockwork.quiz:AddQuestion("¿Comprendes que este servidor presenta contenidos explícitos y temas relacionados con el ocultismo, la violencia extrema y el lenguaje fuerte?", 1, "Sí.", "No.");

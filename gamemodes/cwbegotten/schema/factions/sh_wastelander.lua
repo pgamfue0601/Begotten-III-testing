@@ -33,7 +33,7 @@ RANDOM_SURNAMES = {
 	}
 };
 
-local FACTION = Clockwork.faction:New("Wanderer");
+local FACTION = Clockwork.faction:New("Errante");
 	FACTION.disabled = false; -- For events.
 	FACTION.useFullName = false;
 	FACTION.material = "begotten/faction/faction_logo_wanderers";
@@ -138,7 +138,7 @@ local FACTION = Clockwork.faction:New("Gatekeeper");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy") then
+		if (faction.name != "Errante" and faction.name != "Holy Hierarchy") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end
@@ -726,7 +726,7 @@ local FACTION = Clockwork.faction:New("Pope Adyssa's Gatekeepers");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy") then
+		if (faction.name != "Errante" and faction.name != "Holy Hierarchy") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end
@@ -828,7 +828,7 @@ local FACTION = Clockwork.faction:New("The Third Inquisition");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
+		if (faction.name != "Errante" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
 			return false;
 		end;
 		
@@ -862,7 +862,7 @@ local FACTION = Clockwork.faction:New("Smog City Pirate");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name ~= "Wanderer") then
+		if (faction.name ~= "Errante") then
 			return false;
 		end;
 		
@@ -984,7 +984,7 @@ local FACTION = Clockwork.faction:New("Hillkeeper");
 	
 	-- Called when a player is transferred to the faction.
 	function FACTION:OnTransferred(player, faction, name)
-		if (faction.name != "Wanderer" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
+		if (faction.name != "Errante" and faction.name != "Holy Hierarchy" and faction.name != "Gatekeeper") then
 			if player:GetSubfaction() ~= "Kinisger" then
 				return false;
 			end

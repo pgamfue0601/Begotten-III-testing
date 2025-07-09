@@ -361,7 +361,7 @@ netstream.Hook("UpgradedWarcry", function(data)
 			--if v:GetNetVar("faith") ~= faith then
 				local vFaction = v:GetNetVar("kinisgerOverride") or v:GetFaction();
 				
-				if faction == "Wanderer" or vFaction ~= faction then
+				if faction == "Errante" or vFaction ~= faction then
 					if (v:GetPos():DistToSqr(Clockwork.Client:GetPos()) <= (800 * 800)) then
 						v.warcryTarget = true;
 					end;

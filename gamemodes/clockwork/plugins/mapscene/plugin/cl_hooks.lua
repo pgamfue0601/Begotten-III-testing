@@ -8,7 +8,7 @@ local map = string.lower(game.GetMap());
 
 if map == "rp_begotten3" then
 	camTable = {
-		["Wanderer"] = {
+		["Errante"] = {
 			camVector = Vector(-14977.675781, 12599.680664, -1175),
 			camAngles = Angle(2.5, -177.732, 0),
 			closeCamVector = Vector(-15000, 12599.680664, -1185),
@@ -180,7 +180,7 @@ if map == "rp_begotten3" then
 	};
 elseif map == "rp_begotten_redux" then
 	camTable = {
-		["Wanderer"] = {
+		["Errante"] = {
 			camVector = Vector(-1771.079224, -4537.384277, 1021.419922),
 			camAngles = Angle(8.638, -2.212, 0),
 			closeCamVector = Vector(-1754, -4537.384277, 1013),
@@ -333,7 +333,7 @@ elseif map == "rp_begotten_redux" then
 	};
 elseif map == "rp_scraptown" then
 	camTable = {
-		["Wanderer"] = {
+		["Errante"] = {
 			camVector = Vector(-3218.550537, 11165.052734, 1328),
 			camAngles = Angle(0, 90, 0),
 			closeCamVector = Vector(-3217.906494, 11183.276367, 1320),
@@ -509,7 +509,7 @@ elseif map == "rp_scraptown" then
 	};
 elseif map == "rp_district21" then
 	camTable = {
-		["Wanderer"] = {
+		["Errante"] = {
 			camVector = Vector(12905, -13868, -739),
 			camAngles = Angle(2.5, -39.5, 0),
 			closeCamVector = Vector(12924, -13885, -749),

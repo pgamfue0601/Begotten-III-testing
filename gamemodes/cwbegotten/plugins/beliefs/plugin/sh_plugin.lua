@@ -712,7 +712,7 @@ function COMMAND:OnRun(player, arguments)
 	if player:GetSubfaction() == "Kinisger" then
 		local faction = player:GetNetVar("kinisgerOverride") or player:GetFaction();
 		
-		if faction ~= "Wanderer" then
+		if faction ~= "Errante" then
 			if player:HasBelief("witch") or player:HasBelief("soothsayer") then
 				local message = "\""..table.concat(arguments, " ", 1).."\"";
 
@@ -761,7 +761,7 @@ function COMMAND:OnRun(player, arguments)
 	if player:GetSubfaction() == "Kinisger" then
 		local faction = player:GetNetVar("kinisgerOverride") or player:GetFaction();
 		
-		if faction ~= "Wanderer" then
+		if faction ~= "Errante" then
 			if player:HasBelief("witch") or player:HasBelief("soothsayer") then
 				if !player:IsAdmin() and !Clockwork.player:HasFlags(player, "P") and !Schema:GetRankTier(faction, player:GetCharacterData("rank", 1)) >= 3 then
 					Schema:EasyText(player, "peru", "You are not important enough to do this!");
@@ -1234,7 +1234,7 @@ local COMMAND = Clockwork.command:New("Warcry");
 							end
 						end
 							
-						if (faction == "Wanderer" or vFaction == "Wanderer") and v:GetFaith() ~= faith then
+						if (faction == "Errante" or vFaction == "Errante") and v:GetFaith() ~= faith then
 							-- Kinisgers can twisted warcry if disguised as a Reaver.
 							if faith == "Faith of the Dark" then
 								if faction == vFaction then
@@ -1272,7 +1272,7 @@ local COMMAND = Clockwork.command:New("Warcry");
 									if vFaction == "Hillkeeper" or vFaction == "Holy Hierarchy" or v:GetFaith() == "Faith of the Light" then
 										immune = true;
 									end
-								elseif faction == vFaction or (faction == "Wanderer" and vSubfaction == "Clan Reaver") then
+								elseif faction == vFaction or (faction == "Errante" and vSubfaction == "Clan Reaver") then
 									immune = true;
 								elseif v.banners then
 									for k2, v2 in pairs(v.banners) do

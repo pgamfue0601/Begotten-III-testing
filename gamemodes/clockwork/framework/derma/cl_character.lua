@@ -3322,9 +3322,9 @@ function PANEL:Think()
 			
 			if (self.helpText) then
 				if (points > 0) then
-					self.helpText:SetText("Puedes gastar "..points.." más"..addon);
+					self.helpText:SetText("Puedes gastar "..points.." más");
 				elseif(points < 0) then
-					self.helpText:SetText("¡Has gastado muchos puntos! Para continuar, debes de ganar "..math.abs(points).."  puntos más"..addon);
+					self.helpText:SetText("¡Has gastado muchos puntos! Para continuar, debes de ganar "..math.abs(points).." puntos más");
 				else
 					self.helpText:SetText("Te has quedado sin puntos para gastar");
 				end
@@ -3819,13 +3819,13 @@ function PANEL:Init()
 	self.subfactionForm.Header:SetEnabled(false);
 	
 	if self.curFaction == "Goreic Warrior" then
-		self.subfactionForm:SetName("Clans");
+		self.subfactionForm:SetName("Clanes");
 	elseif self.curFaction == "Gatekeeper" or self.curFaction == "Hillkeeper" then
-		self.subfactionForm:SetName("Troops");
+		self.subfactionForm:SetName("Tropas");
 	elseif self.curFaction == "Holy Hierarchy" then
-		self.subfactionForm:SetName("Orders");
+		self.subfactionForm:SetName("Órdenes");
 	elseif self.curFaction == "Children of Satan" then
-		self.subfactionForm:SetName("Bloodlines");
+		self.subfactionForm:SetName("Linajes");
 	end
 	
 	self.subfactionList = vgui.Create("DPanelList", self.subfactionForm);
