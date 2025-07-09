@@ -37,7 +37,7 @@ function ENT:Use(activator, caller)
 		
 		if faction ~= "Goreic Warrior" then
 			local subfaction = caller:GetSubfaction();
-			local state = "Wanderer";
+			local state = "Errante";
 			
 			if faction == "Holy Hierarchy" then
 				if subfaction == "Minister" then

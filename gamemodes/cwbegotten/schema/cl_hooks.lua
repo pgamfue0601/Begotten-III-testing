@@ -1035,7 +1035,7 @@ function Schema:DrawTargetPlayerSubfaction(target, alpha, x, y)
 						subfactionText = "A member of the Smog City pirates.";
 					end
 				end
-			elseif playerFaction ~= "Wanderer" and playerFaction == targetFaction then
+			elseif playerFaction ~= "Errante" and playerFaction == targetFaction then
 				if playerSubfaction == targetSubfaction then
 					subfactionText = "A fellow member of the "..targetSubfaction..".";
 					textColor = Color(0, 255, 0, 255);
@@ -1968,7 +1968,7 @@ function Schema:ModifyItemMarkupTooltip(category, maximumWeight, weight, conditi
 					frame:AddText("Has Coup de Grace: Deal double damage and 100% AP damage to knocked over enemies. Each hit will slightly increase the time it takes for knocked over enemies to get up.", Color(110, 30, 30), nil, 0.9);
 				end
 				
-				if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Wanderer" then
+				if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Errante" then
 					frame:AddText("Required Faction: "..table.concat(itemTable.requiredFactions, ", "), Color(110, 30, 30), nil, 0.9);
 				end
 				
@@ -2915,7 +2915,7 @@ function Schema:ModifyItemMarkupTooltip(category, maximumWeight, weight, conditi
 					end
 				end
 				
-				if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Wanderer" then
+				if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Errante" then
 					frame:AddText("Required Faction: "..table.concat(itemTable.requiredFactions, ", "), Color(110, 30, 30), nil, 0.9);
 				end
 				
@@ -3235,7 +3235,7 @@ function Schema:ModifyItemMarkupTooltip(category, maximumWeight, weight, conditi
 			end
 		--end
 		
-		if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Wanderer" then
+		if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Errante" then
 			frame:AddText("Required Faction: "..table.concat(itemTable.requiredFactions, ", "), Color(110, 30, 30), nil, 0.9);
 		end
 		
@@ -3724,7 +3724,7 @@ function Schema:ModifyItemMarkupTooltip(category, maximumWeight, weight, conditi
 			frame:AddSpacer(2, Color(0, 0, 0, 0));
 		end;
 		
-		if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Wanderer" then
+		if itemTable.requiredFactions and not table.IsEmpty(itemTable.requiredFactions) and itemTable.requiredFactions[1] ~= "Errante" then
 			frame:AddText("Required Faction: "..table.concat(itemTable.requiredFactions, ", "), Color(110, 30, 30), nil, 0.9);
 		end
 		

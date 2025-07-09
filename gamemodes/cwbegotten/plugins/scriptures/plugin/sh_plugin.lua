@@ -43,7 +43,7 @@ local ITEM = Clockwork.item:New(nil, true)
 					if cwBeliefs and #booksRead < 8 then
 						local readXP = cwBeliefs.xpValues["read"] or 50;
 						
-						if player:GetFaction() ~= "Wanderer" then
+						if player:GetFaction() ~= "Errante" then
 							readXP = math.Round(readXP / 2);
 						end
 						

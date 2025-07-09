@@ -259,13 +259,13 @@ local COMMAND = Clockwork.command:New("Enlist")
 					end
 				
 					if !subfaction or istable(subfaction) then
-						if targetFaction == "Wanderer" or (enlistFaction ~= "Children of Satan" and targetFaction == "Children of Satan" and target:GetSubfaction() == "Kinisger") then
+						if targetFaction == "Errante" or (enlistFaction ~= "Children of Satan" and targetFaction == "Children of Satan" and target:GetSubfaction() == "Kinisger") then
 							local playerName = player:Name();
 						
 							Clockwork.dermaRequest:RequestConfirmation(target, enlistFaction.." Enlistment", playerName.." has invited you to enlist into the "..enlistFaction.." faction!", function()
 								targetFaction = target:GetNetVar("kinisgerOverride") or target:GetFaction();
 								
-								if (targetFaction == "Wanderer" or (enlistFaction ~= "Children of Satan" and targetFaction == "Children of Satan" and target:GetSubfaction() == "Kinisger")) and target:Alive() and Clockwork.faction:IsGenderValid(enlistFaction, target:GetGender()) then
+								if (targetFaction == "Errante" or (enlistFaction ~= "Children of Satan" and targetFaction == "Children of Satan" and target:GetSubfaction() == "Kinisger")) and target:Alive() and Clockwork.faction:IsGenderValid(enlistFaction, target:GetGender()) then
 									local bSuccess, fault = Clockwork.faction:GetStored()[enlistFaction]:OnTransferred(target, Clockwork.faction:GetStored()[targetFaction]);
 									
 									if (bSuccess != false) then
@@ -423,13 +423,13 @@ local COMMAND = Clockwork.command:New("Initiate")
 						return;
 					end
 				
-					if targetFaction == "Wanderer" then
+					if targetFaction == "Errante" then
 						local playerName = player:Name();
 					
 						Clockwork.dermaRequest:RequestConfirmation(target, "A Dark Invitation", playerName.." has extended an invitation into the Children of Satan!", function()
 							targetFaction = target:GetFaction();
 							
-							if (targetFaction == "Wanderer" and target:Alive() and target:GetFaith() == "Faith of the Dark") then
+							if (targetFaction == "Errante" and target:Alive() and target:GetFaith() == "Faith of the Dark") then
 								local bSuccess, fault = Clockwork.faction:GetStored()[faction]:OnTransferred(target, Clockwork.faction:GetStored()[targetFaction]);
 								
 								if (bSuccess != false) then

@@ -62,3 +62,5 @@ settings/clockwork/schemas/cwbegotten/plugins/shacks/rp_begotten3.cw
 settings/clockwork/schemas/cwbegotten/plugins/storage/rp_begotten3.cw
 settings/clockwork/schemas/cwbegotten/plugins/salesmen/rp_begotten3.cw
 settings/clockwork/schemas/cwbegotten/plugins/radios/rp_begotten3.cw
+
+*.cw

@@ -28,7 +28,7 @@ function ENT:Use(activator, caller)
 	local state;
 	if IsValid(caller) and caller:IsPlayer() then
 		if caller:GetFaction() ~= "Children of Satan" then
-			state = "Wanderer";
+			state = "Errante";
 		else
 			state = "Satanist";
 		end

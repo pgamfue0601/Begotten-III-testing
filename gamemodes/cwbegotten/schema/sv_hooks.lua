@@ -426,7 +426,7 @@ function Schema:EntityHandleMenuOption(player, entity, option, arguments)
 						
 						killXP = killXP * math.Clamp(player:GetCharacterData("level", 1), 1, 40);
 						
-						if playerFaction == "Wanderer" then
+						if playerFaction == "Erramte" then
 							killXP = killXP * 2;
 						end
 						
@@ -650,7 +650,7 @@ function Schema:EntityHandleMenuOption(player, entity, option, arguments)
 								
 								killXP = killXP * math.Clamp(player:GetCharacterData("level", 1), 1, 40);
 								
-								if player:GetFaction() == "Wanderer" then
+								if player:GetFaction() == "Errante" then
 									killXP = killXP * 2;
 								end
 								

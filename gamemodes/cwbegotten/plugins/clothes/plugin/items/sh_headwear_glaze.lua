@@ -814,7 +814,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	ITEM.overlay = "begotten/zomboverlay/new/knighthelmet";
 	ITEM.requiredbeliefs = {"hauberk"};
-	ITEM.requiredFactions = {"Wanderer"};
+	ITEM.requiredFactions = {"Errante"};
 	ITEM.attributes = {"wastelord", "fear"};
 
 	ITEM.conditionScale = 0.65

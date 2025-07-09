@@ -38,7 +38,7 @@ local function CreateMenu(state)
 			end
 
 			if (itemTable.cauldronLiquidity or itemTable.cauldronQuality) then
-				if (state == "Wanderer" and !itemTable.cauldronPoison and !itemTable.cauldronPlague) or state == "Satanist" then
+				if (state == "Errante" and !itemTable.cauldronPoison and !itemTable.cauldronPlague) or state == "Satanist" then
 					submenu2:AddOption(itemTable.name, function() Clockwork.kernel:RunCommand("CauldronAddIngredient", itemTable.uniqueID) end);
 				end
 			end

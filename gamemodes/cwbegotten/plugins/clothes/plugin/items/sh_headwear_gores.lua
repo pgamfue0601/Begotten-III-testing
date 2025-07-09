@@ -85,7 +85,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.bodyGroupVal = 9
 	ITEM.headSuffix = "_gore";
 	ITEM.description = "A typical Spearfolk cloth hood decorated with the teeth of slain beasts. The cloth smells of salty sea water."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
 	
 	ITEM.conditionScale = 1.2 -- item degrades 1.5x faster with damage related condition loss
@@ -119,7 +119,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.bodyGroupVal = 4
 	ITEM.headSuffix = "_gore";
 	ITEM.description = "A crudely made horned helmet commonly worn by the savage warriors of Clan Gore. It provides reasonable protection."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	ITEM.overlay = "begotten/zomboverlay/new/gorewarfighterhelm";
 	
@@ -155,7 +155,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.bodyGroupVal = 2
 	ITEM.headSuffix = "_gore";
 	ITEM.description = "A compact iron helmet with two small horns, commonly worn by aspiring slaves seeking a worthy death at the Great Tree."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	
 	ITEM.conditionScale = 1.2 -- item degrades 1.5x faster with damage related condition loss
@@ -189,7 +189,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.bodyGroupVal = 1
 	ITEM.headSuffix = "_gore";
 	ITEM.description = "An iron ridge helm of Goreic origin, embellished with decorations."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	ITEM.overlay = "begotten/zomboverlay/new/goreridgehelm";
 	
@@ -301,7 +301,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.bodyGroupVal = 3
 	ITEM.headSuffix = "_gore";
 	ITEM.description = "A spiked bronze helmet worn by aspiring bandits and murderers seeking a worthy death at the Great Tree."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	
 	ITEM.conditionScale = 1.2 -- item degrades 1.5x faster with damage related condition loss
@@ -448,7 +448,7 @@ local ITEM = Clockwork.item:New("bodygroup_base")
 	ITEM.uniqueID = "reaver_marauder_helm"
 	ITEM.category = "Helms"
 	ITEM.description = "A finely-crafted spangenhelm with a chainmail aventail underneath, it is feared amongst those in the wasteland for being the last thing they ever see before they're condemned to slavery."
-	ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+	ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 	ITEM.excludedSubfactions = {"Clan Grock", "Clan Gore", "Clan Crast", "Clan Harald", "Clan Shagalax"};
 	ITEM.useSound = "armor/plate_damage_02.wav";
 	ITEM.overlay = "begotten/zomboverlay/new/genericmask";

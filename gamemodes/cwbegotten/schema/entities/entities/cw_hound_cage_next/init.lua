@@ -87,7 +87,7 @@ function ENT:OnTakeDamage(damageInfo)
 
 		entity:SetSkin(self:GetSkin())
 		for _, v in _player.Iterator() do
-			if (v:GetFaction() == playerFaith) or (v:GetFaction() == buddiestable[playerFaith]) or (self.houndattackall==false and v:GetFaction() == "Wanderer") then
+			if (v:GetFaction() == playerFaith) or (v:GetFaction() == buddiestable[playerFaith]) or (self.houndattackall==false and v:GetFaction() == "Errante") then
 				entity:AddEntityRelationship(v, D_LI, 99);
 			else					
 				local faction = v:GetNetVar("kinisgerOverride")

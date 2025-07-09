@@ -164,7 +164,7 @@ function Schema:ShouldPlayerModifyBlur(entity)
 					return table.HasValue(helmet.attributes, "fear");
 				end
 			end
-		elseif faction == "Wanderer" then
+		elseif faction == "Errante" then
 			if entity:GetModel() == "models/begotten/gatekeepers/vexi.mdl" or entity:GetModel() == "models/begotten/satanists/wraitharmor.mdl" then
 				return true;
 			else

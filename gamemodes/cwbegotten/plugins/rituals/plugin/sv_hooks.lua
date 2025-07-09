@@ -1019,7 +1019,7 @@ netstream.Hook("AppearanceAlterationMenu", function(player, data)
 				return;
 			end
 			
-			if (!Clockwork.faction:IsGenderValid(data[5] or "Wanderer", data[3])) then
+			if (!Clockwork.faction:IsGenderValid(data[5] or "Errante", data[3])) then
 				player.selectingNewAppearance = false;
 			
 				return;
@@ -1075,7 +1075,7 @@ netstream.Hook("AppearanceAlterationMenu", function(player, data)
 				
 				player:SetCharacterData("rankOverride", nil);
 				
-				if selectedFaction == "Wanderer" then
+				if selectedFaction == "Errante" then
 					player:SetCharacterData("kinisgerOverride", nil);
 					player:SetNetVar("kinisgerOverride", nil);
 					player:SetCharacterData("kinisgerOverrideSubfaction", nil);
@@ -1088,8 +1088,8 @@ netstream.Hook("AppearanceAlterationMenu", function(player, data)
 					if selectedSubfaction then
 						for k, v in pairs(factionTable.subfactions) do
 							if v.name == selectedSubfaction then
-								player:SetCharacterData("kinisgerOverride", "Wanderer");
-								player:SetNetVar("kinisgerOverride", "Wanderer");
+								player:SetCharacterData("kinisgerOverride", "Errante");
+								player:SetNetVar("kinisgerOverride", "Errante");
 								player:SetCharacterData("kinisgerOverrideSubfaction", selectedSubfaction);
 								player:SetNetVar("kinisgerOverrideSubfaction", selectedSubfaction);
 								

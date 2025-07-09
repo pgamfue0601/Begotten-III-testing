@@ -939,7 +939,7 @@ function PANEL:Init()
 		
 		-- Select Wanderer.
 		for i, v in ipairs(self.factionMultiChoice.Choices) do
-			if v == "Wanderer" then
+			if v == "Errante" then
 				self.factionMultiChoice:ChooseOptionID(i);
 				
 				break;

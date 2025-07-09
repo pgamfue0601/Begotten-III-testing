@@ -10475,7 +10475,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Hauberk";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Dark"};
 		RECIPE.requirements = {
 			["hellforged_steel_ingot"] = {amount = 2},
@@ -10507,7 +10507,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Hauberk";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Family"};
 		RECIPE.requirements = {
 			["shagalaxian_steel_ingot"] = {amount = 2},
@@ -10539,7 +10539,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Hauberk";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Light"};
 		RECIPE.requirements = {
 			["maximilian_steel_ingot"] = {amount = 2},
@@ -10571,7 +10571,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Helm";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Dark"};
 		RECIPE.requirements = {
 			["hellforged_steel_ingot"] = {amount = 1},
@@ -10602,7 +10602,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Helm";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Family"};
 		RECIPE.requirements = {
 			["shagalaxian_steel_ingot"] = {amount = 1},
@@ -10633,7 +10633,7 @@ function cwRecipes:ClockworkInitialized()
 		RECIPE.name = "Wastelord Helm";
 		RECIPE.requiresSmithy = true;
 		RECIPE.requiredBeliefs = {"artisan"};
-		RECIPE.requiredFactions = {"Wanderer"};
+		RECIPE.requiredFactions = {"Errante"};
 		RECIPE.requiredFaiths = {"Faith of the Light"};
 		RECIPE.requirements = {
 			["maximilian_steel_ingot"] = {amount = 1},

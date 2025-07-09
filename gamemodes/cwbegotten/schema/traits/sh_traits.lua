@@ -72,7 +72,7 @@ local ESCAPEE = Clockwork.trait:New()
 	ESCAPEE.description = "Your character is an escapee from some slave camp or prison, but in your haste to escape you were not able to have your bindings removed. You will start tied up."
 	ESCAPEE.points = -2
 	ESCAPEE.disables = {"logger", "miner", "pilgrim", "scavenger", "survivalist", "veteran"}
-	ESCAPEE.requiredfactions = {"Wanderer"}
+	ESCAPEE.requiredfactions = {"Errante"}
 Clockwork.trait:Register(ESCAPEE)
 
 local EXHAUSTED = Clockwork.trait:New()
@@ -86,7 +86,7 @@ local EXHAUSTED = Clockwork.trait:New()
 	end
 
 	EXHAUSTED.points = -2
-	EXHAUSTED.requiredfactions = {"Wanderer"}
+	EXHAUSTED.requiredfactions = {"Errante"}
 Clockwork.trait:Register(EXHAUSTED)
 
 local FAVORED = Clockwork.trait:New()
@@ -168,7 +168,7 @@ local LOGGER = Clockwork.trait:New()
 	LOGGER.description = "Your character is a logger, chopping trees and limbs alike. This trait grants a starting hatchet."
 	LOGGER.points = 4
 	LOGGER.disables = {"escapee", "weak"}
-	LOGGER.requiredfactions = {"Wanderer"}
+	LOGGER.requiredfactions = {"Errante"}
 	LOGGER.eventlocked = false;
 Clockwork.trait:Register(LOGGER)
 
@@ -186,7 +186,7 @@ local MINER = Clockwork.trait:New()
 	MINER.description = "Your character is a miner, spending much of their time deep under the earth. This trait grants a starting pickaxe for mining ore and a lantern to help you navigate the depths."
 	MINER.points = 7
 	MINER.disables = {"escapee", "weak"}
-	MINER.requiredfactions = {"Wanderer"}
+	MINER.requiredfactions = {"Errante"}
 	MINER.excludedmaps = {"rp_district21"}
 Clockwork.trait:Register(MINER)
 
@@ -220,7 +220,7 @@ local PILGRIM = Clockwork.trait:New()
 	
 	PILGRIM.points = 2
 	PILGRIM.disables = {"criminal", "escapee", "gunslinger", "leper"}
-	PILGRIM.requiredfactions = {"Wanderer"}
+	PILGRIM.requiredfactions = {"Errante"}
 Clockwork.trait:Register(PILGRIM)
 
 local PIOUS = Clockwork.trait:New()
@@ -323,7 +323,7 @@ local WOUNDED = Clockwork.trait:New()
 	WOUNDED.name = "Wounded"
 	WOUNDED.description = "Your character was wounded during their arduous journey to their destination. This trait starts your character with a random assortment of wounds and missing health."
 	WOUNDED.points = -2
-	WOUNDED.requiredfactions = {"Wanderer"}
+	WOUNDED.requiredfactions = {"Errante"}
 Clockwork.trait:Register(WOUNDED)
 
 local ZEALOUS = Clockwork.trait:New()
