@@ -181,7 +181,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "A crude set of chainmail over leather and fur garb, it provides adequate protection from enemy weapons and the elements.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.excludedSubfactions = {"Clan Grock"};
 
 ITEM.effectiveLimbs = {
@@ -419,7 +419,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "A sleeveless chainmail set over leather garb, stylized in Clan Haralder's fashion. The patchwork leather smells of the sea. This armor is old and forgotten.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.excludedSubfactions = {"Clan Grock"};
 
 ITEM.effectiveLimbs = {
@@ -542,7 +542,7 @@ ITEM.weight = 6.5;
 ITEM.weightclass = "Medium";
 ITEM.description = "Steel plates arranged in a fishscale pattern upon a gambeson coat. It provides fine protection while not being too much of a hindrance to mobility.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.excludedSubfactions = {"Clan Grock"};
 
 ITEM.effectiveLimbs = {
@@ -667,7 +667,7 @@ ITEM.weightclass = "Medium";
 ITEM.type = "plate";
 ITEM.description = "A harness of lamellar and cold forged black iron. It is covered in sigils and runes of Clan Reaver, and even foreign symbols from far northern wastelands. Used widely in Goreic warbands for its strong protective metal plating.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.excludedSubfactions = {"Clan Harald", "Clan Gore", "Clan Shagalax", "Clan Crast", "Clan Grock"};
 
 ITEM.effectiveLimbs = {
@@ -780,7 +780,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "An impressively smithed hauberk of scalemail, blackened using ancient shagalax forging methods. Layered with a special type of leather padding, this armor can help to dampen the blows from firearm.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.requiredSubfactions = {"Clan Shagalax"};
 
 ITEM.effectiveLimbs = {
@@ -836,7 +836,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "Goreic chainmail smithed in the style of the Eastern Reavers. Extra padding has been sewn under the chainmail to resist blunt attacks.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.onerequiredbelief = {"sister", "satanism", "primevalism"};
 
 ITEM.effectiveLimbs = {
@@ -953,7 +953,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "Sturdy chainmail that has been blessed by the Father, granting its user increased speed and vigor in battle. This style of armor is worn by aspiring warriors seeking to be remembered long after their death.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.requiredSubfactions = {"Clan Gore"};
 ITEM.kinisgerOverride = true;
 
@@ -995,7 +995,7 @@ ITEM.weight = 7.5;
 ITEM.weightclass = "Medium";
 ITEM.description = "Steel plates arranged in a fishscale pattern upon a gambeson coat. It provides fine protection while not being too much of a hindrance to mobility. This armor is affected by the curse of Clan Harald, and thus no others may wear it.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.requiredSubfactions = {"Clan Harald"};
 ITEM.kinisgerOverride = true;
 
@@ -1058,7 +1058,7 @@ ITEM.weight = 2;
 ITEM.weightclass = "Light";
 ITEM.description = "Brightly dyed leather armor from the Eastern Isles of the Gorelands. It provides a reasonable degree of protection while not compromising mobility.";
 ITEM.useSound = "npc/combine_soldier/zipline_clothing2.wav";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 
 ITEM.effectiveLimbs = {
 	[HITGROUP_GENERIC] = true,
@@ -1100,7 +1100,7 @@ ITEM.weight = 4;
 ITEM.weightclass = "Medium";
 ITEM.description = "A sleeveless chainmail set over leather garb, stylized in Clan Haralder's fashion. The patchwork leather smells of the sea.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.requiredSubfactions = {"Clan Harald"};
 ITEM.kinisgerOverride = true;
 
@@ -1162,7 +1162,7 @@ ITEM.weight = 5;
 ITEM.weightclass = "Medium";
 ITEM.description = "A crude set of chainmail over leather and fur garb, it provides adequate protection from enemy weapons and the elements. This particular style originates from the frozen lands of Vancouver.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
-ITEM.requiredFactions = {"Goreic Warrior", "Wanderer"};
+ITEM.requiredFactions = {"Goreic Warrior", "Errante"};
 ITEM.excludedSubfactions = {"Clan Grock"};
 
 ITEM.effectiveLimbs = {

@@ -1493,7 +1493,7 @@ function cwBeliefs:FuckMyLife(entity, damageInfo)
 						end
 						
 						-- Make sure players can't get XP from damaging the same faction as them!
-						if ((attackerFaction ~= playerFaction and (!attackerFactionTable.alliedfactions or !table.HasValue(attackerFactionTable.alliedfactions, playerFaction))) or attackerFaction == "Wanderer") and (attacker:GetSubfaith() ~= "Voltism" or entity:GetSubfaith() ~= "Voltism") then
+						if ((attackerFaction ~= playerFaction and (!attackerFactionTable.alliedfactions or !table.HasValue(attackerFactionTable.alliedfactions, playerFaction))) or attackerFaction == "Errante") and (attacker:GetSubfaith() ~= "Voltism" or entity:GetSubfaith() ~= "Voltism") then
 							local subfaction = attacker:GetSubfaction();
 							local damageXP = math.min(damage, entity:Health()) * self.xpValues["damage"];
 							
@@ -2369,7 +2369,7 @@ function cwBeliefs:PlayerDeath(player, inflictor, attacker, damageInfo)
 				end
 				
 				-- Make sure players can't get XP from damaging the same faction as them!
-				if ((attackerFaction ~= playerFaction and (!attackerFactionTable.alliedfactions or !table.HasValue(attackerFactionTable.alliedfactions, playerFaction))) or attackerFaction == "Wanderer") and (attacker:GetSubfaith() ~= "Voltism" or player:GetSubfaith() ~= "Voltism") then
+				if ((attackerFaction ~= playerFaction and (!attackerFactionTable.alliedfactions or !table.HasValue(attackerFactionTable.alliedfactions, playerFaction))) or attackerFaction == "Errante") and (attacker:GetSubfaith() ~= "Voltism" or player:GetSubfaith() ~= "Voltism") then
 					local killXP = self.xpValues["kill"];
 					
 					killXP = killXP * math.Clamp(player:GetCharacterData("level", 1), 1, 40);
