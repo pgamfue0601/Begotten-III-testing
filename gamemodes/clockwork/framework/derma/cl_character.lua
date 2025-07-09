@@ -52,16 +52,16 @@ function PANEL:Init()
 		self:SetMouseInputEnabled(true);
 		
 		if game.GetMap() == "rp_district21" then
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "New Victim");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Nueva Victima");
 
 			self.createButton = vgui.Create("cwLabelButton", self);
 			self.createButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.createButton:SetText("New Victim");
-			self.createButton.aText = "New Victim";
+			self.createButton:SetText("Nueva Victima");
+			self.createButton.aText = "Nueva Victima";
 			self.createButton:FadeIn(0.5);
 			self.createButton:SetCallback(function(panel)
 				if (table.Count(Clockwork.character:GetAll()) >= Clockwork.player:GetMaximumCharacters()) then
-					return Clockwork.character:SetFault("You cannot create any more characters!");
+					return Clockwork.character:SetFault("¡No puedes crear más personajes!");
 				end;
 
 				Clockwork.character:ResetCreationInfo();
@@ -79,12 +79,12 @@ function PANEL:Init()
 
 			end
 
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Victims");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Victimas");
 
 			self.loadButton = vgui.Create("cwLabelButton", self);
 			self.loadButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.loadButton:SetText("Victims");
-			self.loadButton.aText = "Victims";
+			self.loadButton:SetText("Victimas");
+			self.loadButton.aText = "Victimas";
 			self.loadButton:FadeIn(0.5);
 			self.loadButton:SetCallback(function(panel)
 				self:OpenPanel("cwCharacterList", nil, function(panel)
@@ -103,24 +103,24 @@ function PANEL:Init()
 
 			end
 
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Run in Fear");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Corre por tu vida");
 
 			self.disconnectButton = vgui.Create("cwLabelButton", self);
 			self.disconnectButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.disconnectButton:SetText("Run in Fear");
-			self.disconnectButton.aText = "Run in Fear";
+			self.disconnectButton:SetText("Corre por tu vida");
+			self.disconnectButton.aText = "Corre por tu vida";
 			self.disconnectButton:FadeIn(0.5);
 			self.disconnectButton:SetCallback(function(panel)
 				if (Clockwork.Client:HasInitialized()) then
 					Clockwork.character:SetPanelMainMenu();
 					Clockwork.character:SetPanelOpen(false);
 				else
-					Derma_Query("Are you sure you want to disconnect?", "Disconnect", "Yes", function()
-						Derma_Query("Are you really sure?", "Disconnect", "No, I would like to stay for longer.", function() end, "Yes, disconnect now.", function()
-							Derma_Query("Are you sure you don't want to stay?", "Disconnect", "No, I would like to leave now.", function()
-								print("okay, bye then!!! bye bye!!!");
+					Derma_Query("¿Estás seguro de que te quieres desconectar?", "Desconectar", "Si", function()
+						Derma_Query("¿Seguro seguro?", "Desconectar", "No, me gustaria quedarme un rato más.", function() end, "Sí, desconectar ya.", function()
+							Derma_Query("¿De verdad que no te quieres quedar?", "Desconectar", "No, quiero irme YA.", function()
+								print("VALEEE, TA LUEGITOOOO!!!!");
 								RunConsoleCommand("disconnect");
-							end, "Yes, I will stay.", function() end);
+							end, "Sí, me quedaré.", function() end);
 						end);
 					end, "No", function() end);
 				end;
@@ -137,11 +137,11 @@ function PANEL:Init()
 
 			end
 
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Previous");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Atrás");
 			self.previousButton = vgui.Create("cwLabelButton", self);
 			self.previousButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.previousButton:SetText("Previous");
-			self.previousButton.aText = "Previous";
+			self.previousButton:SetText("Atrás");
+			self.previousButton.aText = "Atrás";
 			self.previousButton:SetCallback(function(panel)
 				if (!Clockwork.character:IsCreationProcessActive()) then
 					local activePanel = Clockwork.character:GetActivePanel();
@@ -165,11 +165,11 @@ function PANEL:Init()
 
 			end
 
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Suffer");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Sufre");
 			self.cancelButton = vgui.Create("cwLabelButton", self);
 			self.cancelButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.cancelButton:SetText("Suffer");
-			self.cancelButton.aText = "Suffer";
+			self.cancelButton:SetText("Sufre");
+			self.cancelButton.aText = "Sufre";
 			self.cancelButton:SetCallback(function(panel)
 				Clockwork.Client:ScreenFade(SCREENFADE.OUT, Color(0, 0, 0, 255 ), 1, 1.2);
 
@@ -200,11 +200,11 @@ function PANEL:Init()
 
 			end
 
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Next");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize("demiurgemenuTextDistrict21Menu", "Siguiente");
 			self.nextButton = vgui.Create("cwLabelButton", self);
 			self.nextButton:SetFont("demiurgemenuTextDistrict21Menu");
-			self.nextButton:SetText("Next");
-			self.nextButton.aText = "Next";
+			self.nextButton:SetText("Siguiente");
+			self.nextButton.aText = "Siguiente";
 
 			function self.nextButton:Paint(w, h)
 				Clockwork.character:KillMePlease(self);
@@ -237,16 +237,16 @@ function PANEL:Init()
 			self.nextButton.bStartFaded = true;
 			self.nextButton:SetEnabled(false);
 		else
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "NEW VICTIM");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "NUEVA VICTIMA");
 			
 			self.createButton = vgui.Create("cwLabelButton", self);
 			self.createButton:SetFont(smallTextFont);
-			self.createButton:SetText("NEW VICTIM");
-			self.createButton.originalText = "NEW VICTIM";
+			self.createButton:SetText("NUEVA VICTIMA");
+			self.createButton.originalText = "NUEVA VICTIMA";
 			self.createButton:FadeIn(0.5);
 			self.createButton:SetCallback(function(panel)
 				if (table.Count(Clockwork.character:GetAll()) >= Clockwork.player:GetMaximumCharacters()) then
-					return Clockwork.character:SetFault("You cannot create any more characters! Try clearing any characters in your Necropolis first!");
+					return Clockwork.character:SetFault("¡No puedes crear más personajes! ¡Intenta eliminar algunos de tu Necropolis!");
 				end;
 				
 				Clockwork.character:ResetCreationInfo();
@@ -260,7 +260,7 @@ function PANEL:Init()
 			
 			function self.createButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"NEW VICTIM", "nEw ViCtIm", "NeW vIcTiM"};
+					local texts = {"NUEVA VICTIMA", "nUeVa ViCtImA", "NuEVa vIcTiMA"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -268,12 +268,12 @@ function PANEL:Init()
 				end;
 			end;
 			
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "VICTIMS");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "VICTIMAS");
 			
 			self.loadButton = vgui.Create("cwLabelButton", self);
 			self.loadButton:SetFont(smallTextFont);
-			self.loadButton:SetText("VICTIMS");
-			self.loadButton.originalText = "VICTIMS";
+			self.loadButton:SetText("VICTIMAS");
+			self.loadButton.originalText = "VICTIMAS";
 			self.loadButton:FadeIn(0.5);
 			self.loadButton:SetCallback(function(panel)
 				self:OpenPanel("cwCharacterList", nil, function(panel)
@@ -288,7 +288,7 @@ function PANEL:Init()
 			
 			function self.loadButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"VICTIMS", "vIcTiMs", "ViCtImS"};
+					local texts = {"VICTIMAS", "vIcTiMAs", "ViCtImaS"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -296,23 +296,23 @@ function PANEL:Init()
 				end;
 			end;
 			
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "RUN IN FEAR");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "CORRE POR TU VIDA");
 			
 			self.disconnectButton = vgui.Create("cwLabelButton", self);
 			self.disconnectButton:SetFont(smallTextFont);
-			self.disconnectButton:SetText("RUN IN FEAR");
+			self.disconnectButton:SetText("CORRE POR TU VIDA");
 			self.disconnectButton:FadeIn(0.5);
 			self.disconnectButton:SetCallback(function(panel)
 				if (Clockwork.Client:HasInitialized()) then
 					Clockwork.character:SetPanelMainMenu();
 					Clockwork.character:SetPanelOpen(false);
 				else
-					Derma_Query("Are you sure you want to disconnect?", "Disconnect", "Yes", function()
-						Derma_Query("Are you really sure?", "Disconnect", "No, I would like to stay for longer.", function() end, "Yes, disconnect now.", function()
-							Derma_Query("Are you sure you don't want to stay?", "Disconnect", "No, I would like to leave now.", function()
-								print("okay, bye then!!! bye bye!!!");
+					Derma_Query("¿Estás seguro de que te quieres desconectar?", "Desconectar", "Si", function()
+						Derma_Query("¿Seguro seguro?", "Desconectar", "No, me gustaria quedarme un rato más.", function() end, "Sí, desconectar ya.", function()
+							Derma_Query("¿De verdad que no te quieres quedar?", "Desconectar", "No, quiero irme YA.", function()
+								print("VALEEE, TA LUEGITOOOO!!!!");
 								RunConsoleCommand("disconnect");
-							end, "Yes, I will stay.", function() end);
+							end, "Sí, me quedaré.", function() end);
 						end);
 					end, "No", function() end);
 				end;
@@ -322,11 +322,11 @@ function PANEL:Init()
 			self.disconnectButton:SizeToContents();
 			self.disconnectButton:SetPos((ScrW() / 2) - (newsizew / 2), ScrH() * 0.925);
 			self.disconnectButton:SetMouseInputEnabled(true);
-			self.disconnectButton.originalText = "RUN IN FEAR";
+			self.disconnectButton.originalText = "CORRE POR TU VIDA";
 			
 			function self.disconnectButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"RUN IN FEAR", "rUn In FeAr", "RuN iN fEaR"};
+					local texts = {"CORRE POR TU VIDA", "CoRrE PoR tU ViDa", "cOrRe PoR Tu ViDa"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -334,10 +334,10 @@ function PANEL:Init()
 				end;
 			end;
 			
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "PREVIOUS");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "ATRÁS");
 			self.previousButton = vgui.Create("cwLabelButton", self);
 			self.previousButton:SetFont(smallTextFont);
-			self.previousButton:SetText("PREVIOUS");
+			self.previousButton:SetText("ATRÁS");
 			self.previousButton:SetCallback(function(panel)
 				if (!Clockwork.character:IsCreationProcessActive()) then
 					local activePanel = Clockwork.character:GetActivePanel();
@@ -357,7 +357,7 @@ function PANEL:Init()
 			
 			function self.previousButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"PrEvIoUs", "pReViOuS"};
+					local texts = {"AtRáS", "aTrAs"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -365,10 +365,10 @@ function PANEL:Init()
 				end;
 			end;
 			
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "SUFFER");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "SUFRE");
 			self.cancelButton = vgui.Create("cwLabelButton", self);
 			self.cancelButton:SetFont(smallTextFont);
-			self.cancelButton:SetText("SUFFER");
+			self.cancelButton:SetText("SUFRE");
 			self.cancelButton:SetCallback(function(panel)
 				Clockwork.Client:ScreenFade(SCREENFADE.OUT, Color(0, 0, 0, 255 ), 1, 1.2);
 				
@@ -395,7 +395,7 @@ function PANEL:Init()
 			
 			function self.cancelButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"sUfFeR", "SuFfEr"};
+					local texts = {"sUfRe", "SuFrE"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -403,14 +403,14 @@ function PANEL:Init()
 				end;
 			end;
 			
-			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "NEXT");
+			local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "SIGUIENTE");
 			self.nextButton = vgui.Create("cwLabelButton", self);
 			self.nextButton:SetFont(smallTextFont);
-			self.nextButton:SetText("NEXT");
+			self.nextButton:SetText("SIGUIENTE");
 			
 			function self.nextButton:Paint(w, h)
 				if (self:GetHovered()) then
-					local texts = {"NeXt", "nExT"};
+					local texts = {"SiGuiEnTE", "sIgUiEnTe"};
 					
 					for i = 1, math.random(2, 4) do
 						surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -742,29 +742,29 @@ function PANEL:Think()
 			
 			if (Clockwork.Client:HasInitialized()) then
 				if game.GetMap() == "rp_district21" then
-					self.disconnectButton:SetText("Suffer");
-					self.disconnectButton.aText = "Suffer";
-					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "Suffer");
+					self.disconnectButton:SetText("Sufre");
+					self.disconnectButton.aText = "Sufre";
+					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "Sufre");
 					self.disconnectButton:SetPos((ScrW() / 2) - (newsizew / 2), ScrH() * 0.925);
 					self.disconnectButton:SizeToContents();
 					self.disconnectButton:SetText("");
 				else
-					self.disconnectButton:SetText("SUFFER");
-					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "SUFFER");
+					self.disconnectButton:SetText("SUFRE");
+					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "SUFRE");
 					self.disconnectButton:SetPos((ScrW() / 2) - (newsizew / 2), ScrH() * 0.925);
 					self.disconnectButton:SizeToContents();
 				end
 			else
 				if game.GetMap() == "rp_district21" then
-					self.disconnectButton:SetText("Run in Fear");
-					self.disconnectButton.aText = "Run in Fear";
-					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "Run in Fear");
+					self.disconnectButton:SetText("Corre por tu vida");
+					self.disconnectButton.aText = "Corre por tu vida";
+					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "Corre por tu vida");
 					self.disconnectButton:SetPos((ScrW() / 2) - (newsizew / 2), ScrH() * 0.925);
 					self.disconnectButton:SizeToContents();
 					self.disconnectButton:SetText("");
 				else
-					self.disconnectButton:SetText("RUN IN FEAR");
-					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "RUN IN FEAR");
+					self.disconnectButton:SetText("CORRE POR TU VIDA");
+					local newsizew, newsizeH = Clockwork.kernel:GetCachedTextSize(smallTextFont, "CORRE POR TU VIDA");
 					self.disconnectButton:SetPos((ScrW() / 2) - (newsizew / 2), ScrH() * 0.925);
 					self.disconnectButton:SizeToContents();
 				end
@@ -1132,7 +1132,7 @@ function PANEL:Init()
 	self.nameLabel:SetPos(187 - (self.nameLabel:GetWide() / 2), 2);
 	
 	self.faithLabel = vgui.Create("DLabel", self);
-	self.faithLabel:SetText("Faith: "..faithText);
+	self.faithLabel:SetText("Fe: "..faithText);
 	self.faithLabel:SetTextColor(Color(160, 145, 145));
 	self.faithLabel:SetFont("Decay_FormText");
 	self.faithLabel:SetPos(16, 26);
@@ -1147,41 +1147,41 @@ function PANEL:Init()
 	-- Find a better way to do this later.
 	if self.customData then
 		local zones_to_names = {
-			["caves"] = "Mines",
-			["gore"] = "Gore Forest",
-			["gore_tree"] = "Gore Forest",
-			["gore_hallway"] = "Gore Forest",
-			["hell"] = "Hell",
-			["manor"] = "Hell",
-			["scrapper"] = "Scrap Factory",
-			["toothboy"] = "His Chamber",
-			["tower"] = "Tower of Light",
-			["wasteland"] = "Wasteland"
+			["caves"] = "Minas",
+			["gore"] = "Bosque Goreico",
+			["gore_tree"] = "Bosque Goreico",
+			["gore_hallway"] = "Bosque Goreico",
+			["hell"] = "Infierno",
+			["manor"] = "Infierno",
+			["scrapper"] = "Fábrica de chatarra",
+			["toothboy"] = "Su Cámara",
+			["tower"] = "Torre de la Luz",
+			["wasteland"] = "Yermo"
 		};
 		
 		if game.GetMap() == "rp_begotten_redux" then
-			zones_to_names["tower"] = "Town of Light";
+			zones_to_names["tower"] = "Torre de la Luz";
 		elseif game.GetMap() == "rp_district21" then
-			zones_to_names["tower"] = "Hill of Light";
-			zones_to_names["hillbunker"] = "Hill of Light Bunker";
+			zones_to_names["tower"] = "Colina de la Luz";
+			zones_to_names["hillbunker"] = "Búnker de la Colina";
 		end
 		
-		local zoneName = zones_to_names[self.customData.location] or "Unknown";
+		local zoneName = zones_to_names[self.customData.location] or "Desconocido";
 		
-		self.locationLabel:SetText("Location: "..zoneName);
+		self.locationLabel:SetText("Localizacion: "..zoneName);
 	else
-		self.locationLabel:SetText("Location: Unknown");
+		self.locationLabel:SetText("Localizacion: Unknown");
 	end
 	
 	self.sacramentsLabel = vgui.Create("DLabel", self);
-	self.sacramentsLabel:SetText("Level: "..self.customData.level);
+	self.sacramentsLabel:SetText("Nivel: "..self.customData.level);
 	self.sacramentsLabel:SetTextColor(Color(160, 145, 145));
 	self.sacramentsLabel:SetFont("Decay_FormText");
 	self.sacramentsLabel:SetPos(196, 26);
 	self.sacramentsLabel:SetSize(180, 18);
 	
 	self.killsLabel = vgui.Create("DLabel", self);
-	self.killsLabel:SetText("Kills: "..self.customData.kills or 0);
+	self.killsLabel:SetText("Muertes: "..self.customData.kills or 0);
 	self.killsLabel:SetTextColor(Color(160, 145, 145));
 	self.killsLabel:SetFont("Decay_FormText");
 	self.killsLabel:SetPos(286, 26);
@@ -1196,9 +1196,9 @@ function PANEL:Init()
 	if self.customData.timesurvived then
 		--self.timeSurvivedLabel:SetText("Time Survived: "..tostring(os.date("!%X", self.customData.timesurvived)));
 		--self.timeSurvivedLabel:SetText("Time Survived: "..string.FormattedTime(self.customData.timesurvived, "%02i:%02i:%02i"));
-		self.timeSurvivedLabel:SetText("Time Survived: "..FormattedPlayTime(self.customData.timesurvived, "%02i:%02i:%02i"));
+		self.timeSurvivedLabel:SetText("Tiempo en vida: "..FormattedPlayTime(self.customData.timesurvived, "%02i:%02i:%02i"));
 	else
-		self.timeSurvivedLabel:SetText("Time Survived: 00:00:00");
+		self.timeSurvivedLabel:SetText("Tiempo en vida: 00:00:00");
 	end
 	
 	local buttonMaterial = Material("begotten/ui/buttonrecolored.png")
@@ -1206,7 +1206,7 @@ function PANEL:Init()
 	self.useButton = vgui.Create("DButton", self);
 	self.useButton:SetSize(185, 50);
 	self.useButton:SetPos(1, 602);
-	self.useButton:SetText("Possess");
+	self.useButton:SetText("Poseer");
 	self.useButton:SetTextColor(Color(70, 80, 45));
 	self.useButton:SetFont("nov_IntroTextSmallfaaaaa")
 	--self.useButton:SetFont("nov_IntroTextSmallaaafaa")
@@ -1214,7 +1214,7 @@ function PANEL:Init()
 	self.deleteButton = vgui.Create("DButton", self);
 	self.deleteButton:SetSize(185, 50);
 	self.deleteButton:SetPos(188, 602);
-	self.deleteButton:SetText("Sacrifice");
+	self.deleteButton:SetText("Sacrificar");
 	self.deleteButton:SetTextColor(Color(100, 25, 25));
 	self.deleteButton:SetFont("nov_IntroTextSmallfaaaaa")
 	--self.deleteButton:SetFont("nov_IntroTextSmallaaafaa")
@@ -1703,7 +1703,7 @@ function PANEL:Init()
 	self.charImageFrame:SetSize(86, 86);
 	self.charImageFrame:SetPos(21, 21);
 	
-	local charName = self.customData.name or "Unknown Name";
+	local charName = self.customData.name or "Nombre Desconocido";
 	local ranks = Schema.Ranks;
 	
 	if ranks then
@@ -1725,33 +1725,33 @@ function PANEL:Init()
 	self.nameLabel:SetPos(128, 12);
 	
 	self.factionLabel = vgui.Create("DLabel", self);
-	self.factionLabel:SetText("Faction: "..self.customData.faction);
+	self.factionLabel:SetText("Facción: "..self.customData.faction);
 	self.factionLabel:SetTextColor(Color(160, 145, 145));
 	self.factionLabel:SetFont("Decay_FormText");
 	self.factionLabel:SetPos(128, 36);
 	self.factionLabel:SetSize(180, 18);
 	
 	self.subfactionLabel = vgui.Create("DLabel", self);
-	self.subfactionLabel:SetText("Subfaction: "..self.customData.subfaction);
+	self.subfactionLabel:SetText("Subfacción: "..self.customData.subfaction);
 	self.subfactionLabel:SetTextColor(Color(160, 145, 145));
 	self.subfactionLabel:SetFont("Decay_FormText");
 	self.subfactionLabel:SetPos(128, 58);
 	self.subfactionLabel:SetSize(180, 18);
 	
 	self.faithLabel = vgui.Create("DLabel", self);
-	self.faithLabel:SetText("Faith: "..self.customData.faith);
+	self.faithLabel:SetText("Fe: "..self.customData.faith);
 	self.faithLabel:SetTextColor(Color(160, 145, 145));
 	self.faithLabel:SetFont("Decay_FormText");
 	self.faithLabel:SetPos(128, 80);
 	self.faithLabel:SetSize(180, 18);
 
 	self.sacramentsLabel = vgui.Create("DLabel", self);
-	self.sacramentsLabel:SetText("Sacrament Level: 1");
+	self.sacramentsLabel:SetText("Sacrament de Nivel: 1");
 	self.sacramentsLabel:SetTextColor(Color(160, 145, 145));
 	self.sacramentsLabel:SetFont("Decay_FormText");
 	self.sacramentsLabel:SetPos(348, 36);
 	self.sacramentsLabel:SetSize(180, 18);
-	self.sacramentsLabel:SetText("Sacrament Level: "..self.customData.level);
+	self.sacramentsLabel:SetText("Sacrament de Nivel: "..self.customData.level);
 	
 	self.timeSurvivedLabel = vgui.Create("DLabel", self);
 	self.timeSurvivedLabel:SetTextColor(Color(160, 145, 145));
@@ -1762,13 +1762,13 @@ function PANEL:Init()
 	if self.customData.timesurvived then
 		--self.timeSurvivedLabel:SetText("Time Survived: "..tostring(os.date("!%X", self.customData.timesurvived)));
 		--self.timeSurvivedLabel:SetText("Time Survived: "..string.FormattedTime(self.customData.timesurvived, "%02i:%02i:%02i"));
-		self.timeSurvivedLabel:SetText("Time Survived: "..FormattedPlayTime(self.customData.timesurvived, "%02i:%02i:%02i"));
+		self.timeSurvivedLabel:SetText("Tiempo en vida: "..FormattedPlayTime(self.customData.timesurvived, "%02i:%02i:%02i"));
 	else
-		self.timeSurvivedLabel:SetText("Time Survived: 00:00:00");
+		self.timeSurvivedLabel:SetText("Tiempo en vida: 00:00:00");
 	end
 	
 	self.killsLabel = vgui.Create("DLabel", self);
-	self.killsLabel:SetText("Kills: "..self.customData.kills or 0);
+	self.killsLabel:SetText("Muertes: "..self.customData.kills or 0);
 	self.killsLabel:SetTextColor(Color(160, 145, 145));
 	self.killsLabel:SetFont("Decay_FormText");
 	self.killsLabel:SetPos(348, 80);
@@ -1779,7 +1779,7 @@ function PANEL:Init()
 	if self.customData.deathcause and self.customData.deathcause ~= "" then
 		self.deathCauseLabel:SetText(self.customData.deathcause);
 	else
-		self.deathCauseLabel:SetText("Died under mysterious circumstances.");
+		self.deathCauseLabel:SetText("Murio bajo extrañas circunstancias.");
 	end
 	
 	self.deathCauseLabel:SetTextColor(Color(200, 150, 150));
@@ -1833,7 +1833,7 @@ function PANEL:Init()
 	self.deleteButton = vgui.Create("DButton", self);
 	self.deleteButton:SetSize(120, 50);
 	self.deleteButton:SetPos(542, y);
-	self.deleteButton:SetText("Delete");
+	self.deleteButton:SetText("Eliminar");
 	self.deleteButton:SetTextColor(Color(100, 25, 25));
 	self.deleteButton:SetFont("nov_IntroTextSmallaaafaa")
 	
@@ -1961,8 +1961,8 @@ function PANEL:Rebuild()
 	if game.GetMap() == "rp_district21" then
 		self.cancelButton = vgui.Create("cwLabelButton", self);
 		self.cancelButton:SetFont("demiurgemenuTextDistrict21Menu");
-		self.cancelButton:SetText("Return");
-		self.cancelButton.aText = "Return";
+		self.cancelButton:SetText("Volver");
+		self.cancelButton.aText = "Volver";
 		self.cancelButton:SetCallback(function(self)
 			Clockwork.character:GetPanel():OpenPanel("cwCharacterList", nil, function(panel)
 				Clockwork.character:RefreshPanelList();
@@ -1980,7 +1980,7 @@ function PANEL:Rebuild()
 	else
 		self.cancelButton = vgui.Create("cwLabelButton", self);
 		self.cancelButton:SetFont(smallTextFont);
-		self.cancelButton:SetText("RETURN");
+		self.cancelButton:SetText("VOLVER");
 		self.cancelButton:SetCallback(function(self)
 			Clockwork.character:GetPanel():OpenPanel("cwCharacterList", nil, function(panel)
 				Clockwork.character:RefreshPanelList();
@@ -1993,7 +1993,7 @@ function PANEL:Rebuild()
 		
 		function self.cancelButton:Paint(w, h)
 			if (self:GetHovered()) then
-				local texts = {"RETURN", "rEtUrN", "ReTuRn"};
+				local texts = {"VOLVER", "vOlVeR", "VoLVeR"};
 				
 				for i = 1, math.random(2, 4) do
 					surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -2010,11 +2010,11 @@ function PANEL:Paint(w, h)
 	local scrH = ScrH();
 
 	if !self.characterFound then
-		draw.SimpleText("The Necropolis lies empty, but not for long...", introTextSmallFont, scrW * 0.5 - 1, scrH * 0.5 - 1, Color(10, 10, 10), 1, 1);
-		draw.SimpleText("The Necropolis lies empty, but not for long...", introTextSmallFont, scrW * 0.5 + 1, scrH * 0.5 + 1, Color(10, 10, 10), 1, 1);
-		draw.SimpleText("The Necropolis lies empty, but not for long...", introTextSmallFont, scrW * 0.5 + 1, scrH * 0.5 - 1, Color(10, 10, 10), 1, 1);
-		draw.SimpleText("The Necropolis lies empty, but not for long...", introTextSmallFont, scrW * 0.5 - 1, scrH * 0.5 + 1, Color(10, 10, 10), 1, 1);
-		draw.SimpleText("The Necropolis lies empty, but not for long...", introTextSmallFont, scrW * 0.5, scrH * 0.5, Color(160, 0, 0), 1, 1);
+		draw.SimpleText("La Necropolis yace vacia, pero no por mucho...", introTextSmallFont, scrW * 0.5 - 1, scrH * 0.5 - 1, Color(10, 10, 10), 1, 1);
+		draw.SimpleText("La Necropolis yace vacia, pero no por mucho...", introTextSmallFont, scrW * 0.5 + 1, scrH * 0.5 + 1, Color(10, 10, 10), 1, 1);
+		draw.SimpleText("La Necropolis yace vacia, pero no por mucho...", introTextSmallFont, scrW * 0.5 + 1, scrH * 0.5 - 1, Color(10, 10, 10), 1, 1);
+		draw.SimpleText("La Necropolis yace vacia, pero no por mucho...", introTextSmallFont, scrW * 0.5 - 1, scrH * 0.5 + 1, Color(10, 10, 10), 1, 1);
+		draw.SimpleText("La Necropolis yace vacia, pero no por mucho...", introTextSmallFont, scrW * 0.5, scrH * 0.5, Color(160, 0, 0), 1, 1);
 	end
  end;
 
@@ -2334,17 +2334,17 @@ function PANEL:Init()
 		self.nameForm.Header:SetEnabled(false);
 		
 		self.nameFormTitle = vgui.Create("DLabel", self.nameForm);
-		self.nameFormTitle:SetText("Name");
+		self.nameFormTitle:SetText("Nombre");
 		self.nameFormTitle:SetPos(6, 2)
 		self.nameFormTitle:SetFont("Decay_FormText")
 		self.nameFormTitle:SizeToContents();
 		self.nameFormTitle:SetColor(Color(255, 255, 255));
 		
 		if (Clockwork.faction.stored[self.info.faction].useFullName) then
-			self.fullNameTextEntry = self.nameForm:TextEntry("Full Name");
+			self.fullNameTextEntry = self.nameForm:TextEntry("Nombre Completo");
 			self.fullNameTextEntry:SetAllowNonAsciiCharacters(true);
 		else
-			self.forenameTextEntry = self.nameForm:TextEntry("Forename");
+			self.forenameTextEntry = self.nameForm:TextEntry("Nombre");
 			self.forenameTextEntry:SetAllowNonAsciiCharacters(true);
 			self.forenameRandomButton = vgui.Create("DImageButton", self.nameForm);
 			
@@ -2366,7 +2366,7 @@ function PANEL:Init()
 				end
 			end;
 			
-			self.surnameTextEntry = self.nameForm:TextEntry("Surname");
+			self.surnameTextEntry = self.nameForm:TextEntry("Apellido");
 			self.surnameTextEntry:SetAllowNonAsciiCharacters(true);
 			self.surnameRandomButton = vgui.Create("DImageButton", self.nameForm);
 			
@@ -2394,7 +2394,7 @@ function PANEL:Init()
 		self.appearanceForm.Header:SetEnabled(false);
 		
 		self.appearanceFormTitle = vgui.Create("DLabel", self.appearanceForm);
-		self.appearanceFormTitle:SetText("Appearance");
+		self.appearanceFormTitle:SetText("Apariencia");
 		self.appearanceFormTitle:SetPos(6, 2)
 		self.appearanceFormTitle:SetFont("Decay_FormText")
 		self.appearanceFormTitle:SizeToContents();
@@ -2473,8 +2473,8 @@ function PANEL:Init()
 		end
 		
 		if (self.bPhysDesc) then
-			self.appearanceFormHelp = self.appearanceForm:Help("Write a physical description for your character.");
-			self.physDescTextEntry = self.appearanceForm:TextEntry("Description");
+			self.appearanceFormHelp = self.appearanceForm:Help("Escribe una descripción física de tu personaje.");
+			self.physDescTextEntry = self.appearanceForm:TextEntry("Descripción");
 			self.physDescTextEntry:SetAllowNonAsciiCharacters(true);
 		end;
 
@@ -2483,7 +2483,7 @@ function PANEL:Init()
 			self.appearanceForm:AddItem(self.skinButton);
 
 			self.skinButton:SetVisible(true);
-			self.skinButton:SetText("Select Skin");
+			self.skinButton:SetText("Selecciona Skin");
 			self.skinButton.DoClick = function()
 				if IsValid(Clockwork.Client.CharSelectionModel) then
 					local skinCount = Clockwork.Client.CharSelectionModel:SkinCount() - 1;
@@ -2522,7 +2522,7 @@ function PANEL:Init()
 
 						local menuPanel = Clockwork.kernel:AddMenuFromData(nil, options, function(menuPanel, option, arguments) end);
 					else
-						local options = {["No Skins Available"] = function() end};
+						local options = {["No hay skins disponibles"] = function() end};
 						local menuPanel = Clockwork.kernel:AddMenuFromData(nil, options, function(menuPanel, option, arguments) end);
 					end;
 				end;
@@ -2587,7 +2587,7 @@ function PANEL:Init()
 		self.traitsForm.Header:SetEnabled(false);
 		
 		self.traitsFormTitle = vgui.Create("DLabel", self.traitsForm);
-		self.traitsFormTitle:SetText("Traits");
+		self.traitsFormTitle:SetText("Rasgos");
 		self.traitsFormTitle:SetPos(6, 2)
 		self.traitsFormTitle:SetFont("Decay_FormText")
 		self.traitsFormTitle:SizeToContents();
@@ -2604,12 +2604,12 @@ function PANEL:Init()
 		
 		self.info.traits = {};
 		
-		self.helpText = self.traitsForm:Help("Points remaining: "..self.maximumPoints);
+		self.helpText = self.traitsForm:Help("Quedan : "..self.maximumPoints.." puntos.");
 		
 		local traitsLabel = vgui.Create("DLabel", self.traitsForm);
 		traitsLabel:SetSize(480, 12);
 		traitsLabel:SetTextInset(64, 0);
-		traitsLabel:SetText("Available Traits                                   Selected Traits");
+		traitsLabel:SetText("Rasgos Disponibles                                   Rasgos Seleccionados");
 		traitsLabel:SetDrawBackground(false);
 		traitsLabel:SetFont("Decay_FormText");
 		traitsLabel:SetColor(Color(255, 20, 20));
@@ -2864,20 +2864,20 @@ function PANEL:Init()
 					
 					if (v.points < 0) then
 						if v.points == -1 then
-							frame:AddText("Gives "..string.gsub(v.points, "-", "").." point", selectedGood);
+							frame:AddText("Otorga "..string.gsub(v.points, "-", "").." punto", selectedGood);
 						else
-							frame:AddText("Gives "..string.gsub(v.points, "-", "").." points", selectedGood);
+							frame:AddText("Otorga "..string.gsub(v.points, "-", "").." puntos", selectedGood);
 						end
 					else
 						if v.points == 1 then
-							frame:AddText("Costs "..v.points.." point", selectedBad);
+							frame:AddText("Cuesta "..v.points.." punto", selectedBad);
 						else
-							frame:AddText("Costs "..v.points.." points", selectedBad);
+							frame:AddText("Cuesta "..v.points.." puntos", selectedBad);
 						end
 					end;
 					
 					if traitButton.disableTable then
-						local disabledTraitsText = "Disables ";
+						local disabledTraitsText = "Deshabilita ";
 						
 						for i = 1, #traitButton.disableTable do
 							local disabledTrait = Clockwork.trait:FindByID(traitButton.disableTable[i]);
@@ -2893,19 +2893,19 @@ function PANEL:Init()
 							end
 						end
 						
-						if disabledTraitsText ~= "Disables " then
+						if disabledTraitsText ~= "Deshabilita " then
 							frame:AddText(disabledTraitsText, selectedBad);
 						end
 					end
 					
 					if traitButton.eventlocked then
-						frame:AddText("This trait is locked for this event!", selectedBad);
+						frame:AddText("¡Este rasgos está bloqueado para el evento!", selectedBad);
 					elseif traitButton.excludedfactions and Clockwork.Client.SelectedFaction and table.HasValue(traitButton.excludedfactions, Clockwork.Client.SelectedFaction) then
-						frame:AddText("This trait is locked for your selected faction!", selectedBad);
+						frame:AddText("¡Este rasgo está bloqueado para tu facción!", selectedBad);
 					elseif traitButton.excludedsubfactions and Clockwork.Client.SelectedSubfaction and table.HasValue(traitButton.excludedsubfactions, Clockwork.Client.SelectedSubfaction) then
-						frame:AddText("This trait is locked for your selected subfaction!", selectedBad);
+						frame:AddText("¡Este rasgo está bloqueado para tu subfacción!", selectedBad);
 					elseif traitButton.requiredfactions and Clockwork.Client.SelectedFaction and !table.HasValue(traitButton.requiredfactions, Clockwork.Client.SelectedFaction) then
-						frame:AddText("This trait is locked for your selected faction!", selectedBad);
+						frame:AddText("¡Este rasgo está bloqueado para tu facción!", selectedBad);
 					end
 				end
 			end);
@@ -2980,7 +2980,7 @@ function PANEL:Init()
 		self.faithForm.Header:SetEnabled(false);
 		
 		self.faithFormTitle = vgui.Create("DLabel", self.faithForm);
-		self.faithFormTitle:SetText("Faith");
+		self.faithFormTitle:SetText("Fe");
 		self.faithFormTitle:SetPos(6, 2)
 		self.faithFormTitle:SetFont("Decay_FormText")
 		self.faithFormTitle:SizeToContents();
@@ -3108,17 +3108,17 @@ function PANEL:OnNext()
 			self.info.fullName = self.fullNameTextEntry:GetValue();
 			
 			if (self.info.fullName == "") then
-				Clockwork.character:SetFault("You did not choose a name, or the name that you chose is not valid!");
+				Clockwork.character:SetFault("¡No has elegido un nombre o el nombre elegido es incorrecto!");
 				return false;
 			end;
 
 			if (string.len(self.info.fullName) < 4) then
-				Clockwork.character:SetFault("Your name must be at least 4 characters long!");
+				Clockwork.character:SetFault("¡Tu nombre debe tener al menos 4 caracteres!");
 				return false;
 			end;
 
 			if (string.len(self.info.fullName) > 32) then
-				Clockwork.character:SetFault("Your name must not be greater than 32 characters long!");
+				Clockwork.character:SetFault("¡Tu nombre no puede tener más de 32 caracteres!");
 				return false;
 			end;
 		else
@@ -3126,7 +3126,7 @@ function PANEL:OnNext()
 			self.info.surname = self.surnameTextEntry:GetValue();
 			
 			if (self.info.forename == "" or self.info.surname == "") then
-				Clockwork.character:SetFault("You did not choose a name, or the name that you chose is not valid!");
+				Clockwork.character:SetFault("¡No has elegido un nombre o el nombre elegido es incorrecto!");
 				return false;
 			end;
 			
@@ -3142,19 +3142,19 @@ function PANEL:OnNext()
 			end;]]--
 			
 			if (string.len(self.info.forename) < 2 or string.len(self.info.surname) < 2) then
-				Clockwork.character:SetFault("Your forename and surname must both be at least 2 characters long!");
+				Clockwork.character:SetFault("¡Tu nombre y apellido deben tener al menos 2 caracteres!");
 				return false;
 			end;
 			
 			if (string.len(self.info.forename) > 16 or string.len(self.info.surname) > 16) then
-				Clockwork.character:SetFault("Your forename and surname must not be greater than 16 characters long!");
+				Clockwork.character:SetFault("¡Tu nombre y apellido no pueden tener más de 16 caracteres!");
 				return false;
 			end;
 		end;
 	end;
 	
 	if (self.bSelectModel and !self.info.model) then
-		Clockwork.character:SetFault("You did not choose a model, or the model that you chose is not valid!");
+		Clockwork.character:SetFault("¡No has elegido un modelo o el modelo elegido es incorrecto!");
 		return false;
 	end;
 	
@@ -3162,12 +3162,12 @@ function PANEL:OnNext()
 		local minimumPhysDesc = Clockwork.config:Get("minimum_physdesc"):Get();
 			self.info.physDesc = self.physDescTextEntry:GetValue();
 		if (string.len(self.info.physDesc) < minimumPhysDesc) then
-			Clockwork.character:SetFault("The physical description must be at least "..minimumPhysDesc.." characters long!");
+			Clockwork.character:SetFault("¡La descripción debe de ser de "..minimumPhysDesc.." caracteres de largo!");
 			return false;
 		end;
 
 		if (string.match(self.info.physDesc, "%s%s+")) then
-			Clockwork.character:SetFault("The description must not have consecutive spaces.");
+			Clockwork.character:SetFault("La descripción física no puede contener espacios dobles.");
 			return false;
 		end;
 		
@@ -3183,7 +3183,7 @@ function PANEL:OnNext()
 	
 	if (self.bFaiths) then
 		if not self.info.faith then
-			Clockwork.character:SetFault("You did not choose a faith!");
+			Clockwork.character:SetFault("¡No has elegido una fe!");
 			return false;
 		end
 	end
@@ -3192,7 +3192,7 @@ function PANEL:OnNext()
 		local points = self:GetPointsLeft();
 		
 		if points < 0 then
-			Clockwork.character:SetFault("You do not have enough points for the traits you have selected!");
+			Clockwork.character:SetFault("¡No tienes suficientes puntos para tus rasgos elegidos!");
 			return false;
 		end
 		
@@ -3202,7 +3202,7 @@ function PANEL:OnNext()
 		if factionTable.mandatorytraits then
 			for i, v in ipairs(factionTable.mandatorytraits) do
 				if !table.HasValue(self.info.traits, v) then
-					Clockwork.character:SetFault("You do not have a mandatory trait required for your faction!");
+					Clockwork.character:SetFault("¡No has elegido todos los rasgos obligatorios de tu facción!");
 					return false;
 				end
 			end
@@ -3322,11 +3322,11 @@ function PANEL:Think()
 			
 			if (self.helpText) then
 				if (points > 0) then
-					self.helpText:SetText("You can spend "..points.." more point"..addon);
+					self.helpText:SetText("Puedes gastar "..points.." más"..addon);
 				elseif(points < 0) then
-					self.helpText:SetText("You have spent too many points! To proceed, you must gain "..math.abs(points).." more point"..addon);
+					self.helpText:SetText("¡Has gastado muchos puntos! Para continuar, debes de ganar "..math.abs(points).."  puntos más"..addon);
 				else
-					self.helpText:SetText("You are out of points to spend.");
+					self.helpText:SetText("Te has quedado sin puntos para gastar");
 				end
 				self.helpText:SetColor(color);
 			end;
@@ -3403,19 +3403,19 @@ function PANEL:Init()
 	self.uniqueID = "cwCharacterStageOne";
 	
 	if game.GetMap() == "rp_district21" then
-		panel.nextButton:SetText("Next");
-		panel.nextButton.aText = "Next";
+		panel.nextButton:SetText("Siguiente");
+		panel.nextButton.aText = "Siguiente";
 		panel.nextButton:SizeToContents();
 		panel.nextButton:SetText("");
 		panel.nextButton.Paint = function(panel, w, h)
 			Clockwork.character:KillMePlease(panel);
 		end;
 	else
-		panel.nextButton:SetText("NEXT");
+		panel.nextButton:SetText("SIGUIENTE");
 		panel.nextButton:SizeToContents();
 		panel.nextButton.Paint = function(panel, w, h)
 			if (panel:GetHovered()) then
-				local texts = {"NeXt", "nExT"};
+				local texts = {"SiGuIeNtE", "sIgUIeNTe"};
 				
 				for i = 1, math.random(2, 4) do
 					surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -3441,7 +3441,7 @@ function PANEL:Init()
 			end
 		end
 		
-		self.faithDescription = "Available faiths: "..faiths;
+		self.faithDescription = "Fes disponibles: "..faiths;
 	else
 		self.factionName = "";
 		self.factionDescription = "";
@@ -3550,7 +3550,7 @@ function PANEL:Init()
 												end
 											end
 											
-											self.faithDescription = "Available faiths: "..faiths;
+											self.faithDescription = "Fes disponibles: "..faiths;
 										end
 									end);
 								end);
@@ -3606,7 +3606,7 @@ function PANEL:OnNext()
 		return true;
 	end
 	
-	Clockwork.character:SetFault("You did not choose a faction or the one you have chosen is not valid!");
+	Clockwork.character:SetFault("¡No has elegido una facción o la facción elegida es incorrecta!");
 	return false;
 end;
 
@@ -3782,19 +3782,19 @@ function PANEL:Init()
 	self.info.subfaction = nil;
 	
 	if game.GetMap() == "rp_district21" then
-		panel.nextButton:SetText("Next");
-		panel.nextButton.aText = "Next";
+		panel.nextButton:SetText("Siguiente");
+		panel.nextButton.aText = "Siguiente";
 		panel.nextButton:SizeToContents();
 		panel.nextButton:SetText("");
 		panel.nextButton.Paint = function(panel, w, h)
 			Clockwork.character:KillMePlease(panel);
 		end;
 	else
-		panel.nextButton:SetText("NEXT");
+		panel.nextButton:SetText("SIGUIENTE");
 		panel.nextButton:SizeToContents();
 		panel.nextButton.Paint = function(panel, w, h)
 			if (panel:GetHovered()) then
-				local texts = {"NeXt", "nExT"};
+				local texts = {"SiGuIeNtE", "sIgUIeNTe"};
 				
 				for i = 1, math.random(2, 4) do
 					surface.DrawRotatedText(table.Random(texts), table.Random(fonts), math.random(-20, 20), math.random(-20, 20), math.random(-5, 5), Color(170, 0, 0))
@@ -4004,10 +4004,10 @@ function PANEL:OnNext()
 			
 				if subfaction.name == Clockwork.Client.SelectedSubfaction then
 					if subfaction.locked then
-						Clockwork.character:SetFault("This subfaction is locked and cannot be selected!");
+						Clockwork.character:SetFault("¡Esta subfacción está bloqueada y no puedes unirte a ella!");
 						return false;
 					elseif subfaction.whitelist and !Clockwork.character:IsWhitelistedSubfaction(subfaction.name) then
-						Clockwork.character:SetFault("You are not whitelisted for this subfaction!");
+						Clockwork.character:SetFault("¡No estás en la lista blanca de esta subfacción!");
 						return false;
 					end
 				end
