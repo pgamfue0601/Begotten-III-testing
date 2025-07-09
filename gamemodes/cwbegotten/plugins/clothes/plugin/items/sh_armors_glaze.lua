@@ -167,7 +167,7 @@ ITEM.type = "plate";
 ITEM.description = "Una armadura de placas de acero impecablemente elaborada, con un tabardo sin decoración encima. Usada casi exclusivamente por espadachines y poderosos yermenses anónimos, esta armadura posee un extraño poder que impide a las facciones llevarla.";
 ITEM.useSound = "armormovement/body-armor-b4.WAV.mp3";
 ITEM.requiredbeliefs = {"hauberk"};
-ITEM.requiredFactions = {"Wanderer"};
+ITEM.requiredFactions = {"Errante"};
 ITEM.attributes = {"wastelord"};
 
 ITEM.effectiveLimbs = {

@@ -3647,7 +3647,7 @@ function GM:HUDDrawScoreBoard()
 	if (netvars.GetNetVar("NoMySQL") and netvars.GetNetVar("NoMySQL") != "") then
 		draw.SimpleText(netvars.GetNetVar("NoMySQL"), introTextSmallFont, scrW / 2, scrH / 2, Color(179, 46, 49, 255), 1, 1)
 	elseif (self.DataStreamedAlpha and self.DataStreamedAlpha > 0) then
-		local textString = "Please wait while Begotten III initializes.";
+		local textString = "Por favor, espera mientras se carga Begotten.";
 		draw.RoundedBox(0, 0, 0, ScrW(), ScrH(), Color(0, 0, 0, self.DataStreamedAlpha));
 		draw.SimpleText(textString, introTextSmallFont, scrW / 2, scrH / 2, Color(170, 0, 0, self.DataStreamedAlpha), 1, 1);
 		bDrawPendingScreenBlack = nil;
